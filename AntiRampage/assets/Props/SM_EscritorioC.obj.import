@@ -15,4 +15,5 @@ dest_files=[ "res://.import/SM_EscritorioC.obj-ff1e6c4efe06d06518dd6bec053d0610.
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true
