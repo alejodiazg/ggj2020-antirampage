@@ -15,4 +15,5 @@ dest_files=[ "res://.import/dino.obj-19c7ecde58f7a5006fa9e7096234b66e.mesh", "re
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true
