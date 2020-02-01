@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/techrex.ogg-51d84c901f8d1a4e524077c3ab67104d.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/techrex.ogg"
+dest_files=[ "res://.import/techrex.ogg-51d84c901f8d1a4e524077c3ab67104d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
