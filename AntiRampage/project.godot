@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="AntiRampage"
+run/main_scene="res://scenes/levels/TestScene.tscn"
 config/icon="res://icon.png"
 
 [rendering]
