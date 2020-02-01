@@ -9,7 +9,7 @@ func _ready():
 	pass 
 	
 func _physics_process(delta):
-	speed += gravity * delta
+	speed.y += gravity * delta
 	input_processing(delta)
 	move_and_slide(speed, Vector3(0,1,0))
 	
