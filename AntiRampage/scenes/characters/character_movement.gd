@@ -8,20 +8,30 @@ var is_grabbing = false
 var is_moveable = true
 var character
 var camera
-
-const SPEED = 6
+var rotating = false
+var prev_rot_z
+var prev_rot_x
+const SPEED = 20
 const ACCELERATION = 3
 const DE_ACCELERATION = 5
 
 func _ready():
-	character = get_node(".")	
+	character = get_node(".")
 	pass 
 		
 func _physics_process(delta):
 	input_processing(delta)
 	#move_and_slide(speed, Vector3(0,1,0))
 	
-	
+func _input(event):
+   # Mouse in viewport coordinates
+	if (rotating):
+		if event is InputEventMouseMotion:
+			var mouse = event.position
+			rotate_axis(mouse)
+
+
+
 func input_processing(delta):
 	camera = get_node("target/Camera").get_global_transform()
 	var dir = Vector3()
@@ -44,17 +54,17 @@ func input_processing(delta):
 		dir.y = 0
 		dir = dir.normalized()
 		
-			
-		speed.y += delta * gravity
+		if (!rotating):
+			speed.y += delta * gravity
 		
 		var hv = speed
 		hv.y = 0
 		
-		var new_pos = dir * move_spd
-		var accel = 1
+		var new_pos = dir * SPEED
+		var accel = DE_ACCELERATION
 		
 		if (dir.dot(hv) > 0):
-			accel = 1
+			accel = ACCELERATION
 			
 		hv = hv.linear_interpolate(new_pos, accel * delta)
 		
@@ -73,6 +83,18 @@ func input_processing(delta):
 			char_rot.y = angle
 			character.set_rotation(char_rot)
 	
+	
+	if (Input.is_action_just_pressed("rotar")):
+		rotating = true
+		is_moveable = false
+		prev_rot_z = rotation_degrees.z
+		prev_rot_x = rotation_degrees.x
+		
+	if (Input.is_action_just_released("rotar")):
+		rotating = false
+		is_moveable = true
+		rotation_degrees.z = prev_rot_z
+		rotation_degrees.x = prev_rot_x
 
 	if (Input.is_action_just_pressed("tecla_x")):
 		if (!is_grabbing):
@@ -97,3 +119,21 @@ func release_object():
 		rotation_degrees.x -= 1
 	is_grabbing = false
 	is_moveable = true
+
+func rotate_axis(mouse):
+	var cameraObj = get_node("target/Camera")
+	var screenPoint = cameraObj.unproject_position(get_node('dino').get_global_transform().origin)
+	
+	var offset = Vector2(mouse.x - screenPoint.x, mouse.y - screenPoint.y)
+	
+	var anglez = deg2rad(atan2(offset.y, offset.x))
+	
+
+	var anglex = deg2rad(mouse.x - screenPoint.x - rotation.x);
+	var angley = deg2rad(mouse.y - screenPoint.y - rotation.y);
+	
+	if (abs(rotation_degrees.x) < 45 || abs(rotation_degrees.x) > 45 &&  abs(rotation_degrees.x + angley) < 45):
+		rotation_degrees.x += angley
+	
+	if (abs(rotation_degrees.z) < 45 || abs(rotation_degrees.z) > 45 &&  abs(rotation_degrees.z + anglex) < 45):
+		rotation_degrees.z += anglex
