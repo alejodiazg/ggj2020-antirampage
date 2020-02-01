@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/SK_DummyDae.dae-5c0af7423434c28484d8a1d715742058.scn"
+path="res://.import/SK_DummyDae.dae-97a2f3aa0c0983bf3be0e860a506e00d.scn"
 
 [deps]
 
-source_file="res://assets/Characters/Dummy/SK_DummyDae.dae"
-dest_files=[ "res://.import/SK_DummyDae.dae-5c0af7423434c28484d8a1d715742058.scn" ]
+source_file="res://assets/characters/Dummy/SK_DummyDae.dae"
+dest_files=[ "res://.import/SK_DummyDae.dae-97a2f3aa0c0983bf3be0e860a506e00d.scn" ]
 
 [params]
 

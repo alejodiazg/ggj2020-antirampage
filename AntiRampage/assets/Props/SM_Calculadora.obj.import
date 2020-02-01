@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SM_Calculadora.obj-32be382615315223a6563c7244c516bc.mesh"
+
+[deps]
+
+files=[ "res://.import/SM_Calculadora.obj-32be382615315223a6563c7244c516bc.mesh" ]
+
+source_file="res://assets/Props/SM_Calculadora.obj"
+dest_files=[ "res://.import/SM_Calculadora.obj-32be382615315223a6563c7244c516bc.mesh", "res://.import/SM_Calculadora.obj-32be382615315223a6563c7244c516bc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
