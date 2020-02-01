@@ -4,6 +4,7 @@ extends Spatial
 export(Mesh) var mesh setget mesh_set
 export(PhysicsMaterial) var physic_material setget physic_material_set
 export(Material)  var material setget material_set
+export(float) var mass = 1 setget mass_set
 # Declare member variables here. Examples:
 # var a = 2	
 # var b = "text"
@@ -44,6 +45,10 @@ func physic_material_set(new_material):
 func material_set(new_material):
 	material = new_material
 	$RigidBody/MeshInstance.material_override = new_material
+
+func mass_set(new_mass):
+	mass = new_mass
+	$RigidBody.mass = mass
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
