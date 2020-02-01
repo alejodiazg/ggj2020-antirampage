@@ -86,13 +86,13 @@ func input_processing(delta):
 	
 	if (Input.is_action_just_pressed("rotar")):
 		rotating = true
-		is_moveable = false
+		#is_moveable = false
 		prev_rot_z = rotation_degrees.z
 		prev_rot_x = rotation_degrees.x
 		
 	if (Input.is_action_just_released("rotar")):
 		rotating = false
-		is_moveable = true
+		#is_moveable = true
 		rotation_degrees.z = prev_rot_z
 		rotation_degrees.x = prev_rot_x
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SK_GomezRex.obj-b97391cb3bcc870f912705506c12bdfe.mesh"
+
+[deps]
+
+files=[ "res://.import/SK_GomezRex.obj-b97391cb3bcc870f912705506c12bdfe.mesh" ]
+
+source_file="res://assets/Enviroment/SK_GomezRex.obj"
+dest_files=[ "res://.import/SK_GomezRex.obj-b97391cb3bcc870f912705506c12bdfe.mesh", "res://.import/SK_GomezRex.obj-b97391cb3bcc870f912705506c12bdfe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
