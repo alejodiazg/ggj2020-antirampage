@@ -4,13 +4,10 @@
 
 [sub_resource type="CapsuleMesh" id=1]
 
-[node name="BaseProp" type="Spatial"]
+[node name="RigidBody" type="RigidBody"]
+mass = 10.0
 script = ExtResource( 1 )
 
-[node name="RigidBody" type="RigidBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-mass = 10.0
-
-[node name="MeshInstance" type="MeshInstance" parent="RigidBody"]
+[node name="MeshInstance" type="MeshInstance" parent="."]
 mesh = SubResource( 1 )
 material/0 = null
