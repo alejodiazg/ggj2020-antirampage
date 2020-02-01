@@ -28,8 +28,8 @@ func input_processing(delta):
 		rotation_degrees.y -= rotation_spd
 	
 	if (Input.is_action_just_released("tecla_a") || Input.is_action_just_released("tecla_d")):
-		speed.x = 0
+		speed = Vector3(0,0,0)
 		
 	if (Input.is_action_just_released("tecla_w") || Input.is_action_just_released("tecla_s")):
-		speed.y = 0
+		speed = Vector3(0,0,0)
 		
