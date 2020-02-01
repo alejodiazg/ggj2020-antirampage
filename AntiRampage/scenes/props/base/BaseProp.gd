@@ -24,6 +24,7 @@ func mesh_set(new_mesh):
 			$RigidBody.remove_child(old_collision)
 			old_collision.free()
 		collision_shape.set_owner(self)
+		collision_shape
 		static_body.remove_child(collision_shape)
 		$RigidBody.add_child(collision_shape)
 		mesh_instance.remove_child(static_body)
