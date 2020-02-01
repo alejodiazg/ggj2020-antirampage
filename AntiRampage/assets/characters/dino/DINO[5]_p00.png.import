@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/DINO[5]_p00.png-975b680cff67ebe2a5e83f9c1976bc04.s3tc.stex"
-path.etc2="res://.import/DINO[5]_p00.png-975b680cff67ebe2a5e83f9c1976bc04.etc2.stex"
+path.s3tc="res://.import/DINO[5]_p00.png-a52ed865b661040d069ce660c370707a.s3tc.stex"
+path.etc2="res://.import/DINO[5]_p00.png-a52ed865b661040d069ce660c370707a.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/characters/dino/DINO[5]_p00.png"
-dest_files=[ "res://.import/DINO[5]_p00.png-975b680cff67ebe2a5e83f9c1976bc04.s3tc.stex", "res://.import/DINO[5]_p00.png-975b680cff67ebe2a5e83f9c1976bc04.etc2.stex" ]
+source_file="res://assets/Characters/dino/DINO[5]_p00.png"
+dest_files=[ "res://.import/DINO[5]_p00.png-a52ed865b661040d069ce660c370707a.s3tc.stex", "res://.import/DINO[5]_p00.png-a52ed865b661040d069ce660c370707a.etc2.stex" ]
 
 [params]
 

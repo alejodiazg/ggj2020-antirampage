@@ -2,17 +2,18 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/dino.obj-deba0ee2174269a7e5ec017d9e6b0b61.mesh"
+path="res://.import/dino.obj-d58190ebac0fea5f7c8fb91876f71d34.mesh"
 
 [deps]
 
-files=[ "res://.import/dino.obj-deba0ee2174269a7e5ec017d9e6b0b61.mesh" ]
+files=[ "res://.import/dino.obj-d58190ebac0fea5f7c8fb91876f71d34.mesh" ]
 
-source_file="res://assets/characters/dino/dino.obj"
-dest_files=[ "res://.import/dino.obj-deba0ee2174269a7e5ec017d9e6b0b61.mesh", "res://.import/dino.obj-deba0ee2174269a7e5ec017d9e6b0b61.mesh" ]
+source_file="res://assets/Characters/dino/dino.obj"
+dest_files=[ "res://.import/dino.obj-d58190ebac0fea5f7c8fb91876f71d34.mesh", "res://.import/dino.obj-d58190ebac0fea5f7c8fb91876f71d34.mesh" ]
 
 [params]
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true
