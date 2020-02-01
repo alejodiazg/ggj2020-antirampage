@@ -5,6 +5,9 @@
 [sub_resource type="CapsuleMesh" id=1]
 
 [node name="RigidBody" type="RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00582409, 0.0615797, 0.0894585 )
+collision_layer = 5
+collision_mask = 5
 mass = 10.0
 script = ExtResource( 1 )
 

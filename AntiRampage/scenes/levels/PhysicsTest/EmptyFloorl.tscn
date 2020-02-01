@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scenes/props/base/BaseProp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/props/SM_Taza.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://assets/props/SM_Escritorio.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=4]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -24,6 +25,9 @@ albedo_color = Color( 1, 0, 0, 1 )
 
 [sub_resource type="SphereMesh" id=7]
 
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 1, 0, 0, 1 )
+
 [sub_resource type="CapsuleMesh" id=8]
 
 [node name="Spatial" type="Spatial"]
@@ -43,10 +47,6 @@ shape = SubResource( 2 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 92.5833, 0 )
-
-[node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.984236, 0, -0.176863, 0, 1, 0, 0.176863, 0, 0.984236, 2.10214, 9.24589, 20.2865 )
-fov = 92.8125
 
 [node name="MovingRectangle" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.06661, 1.9975, 0 )
@@ -70,6 +70,7 @@ material = SubResource( 9 )
 [node name="TwoProp" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.6572, 5.61587 )
 mesh = SubResource( 7 )
+material = SubResource( 10 )
 
 [node name="BaseProp" parent="." instance=ExtResource( 1 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -1.01327, 5.22447, 4.64841 )
@@ -87,5 +88,10 @@ mesh = ExtResource( 3 )
 [node name="BaseProp2" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.67618, 8.67561, 6.76529 )
 mesh = SubResource( 8 )
+
+[node name="Spatial" parent="." instance=ExtResource( 4 )]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 16.4583 )
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
 
 [editable path="BaseProp"]

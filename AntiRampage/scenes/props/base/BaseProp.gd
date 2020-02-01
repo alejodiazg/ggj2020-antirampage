@@ -34,17 +34,6 @@ func mesh_set(new_mesh):
 func material_set(new_material):
 	material = new_material
 	$MeshInstance.material_override = new_material
-#
-#func mass_set(new_mass):
-#	mass = new_mass
-#	$RigidBody.mass = mass
-#
-## Called when the node enters the scene tree for the first time.
-#func _ready():
-#	if (mesh != null):
-#		var mesh_instance = $RigidBody/MeshInstance
-#		mesh_instance.mesh = mesh
-#	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
