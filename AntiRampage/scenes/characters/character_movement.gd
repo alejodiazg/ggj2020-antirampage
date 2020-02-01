@@ -2,40 +2,93 @@ extends KinematicBody
 
 var speed = Vector3()
 var gravity = -9.81
-var move_spd = 30
-var rotation_spd = 5
+var move_spd = 1
+var rotation_spd = 1
 var is_grabbing = false
 var is_moveable = true
+var character
+var camera
 
 func _ready():
+	character = get_node(".")	
 	pass 
 	
 func _physics_process(delta):
-	speed.y += gravity * delta
 	input_processing(delta)
-	move_and_slide(speed, Vector3(0,1,0))
+	#move_and_slide(speed, Vector3(0,1,0))
 	
 	
 func input_processing(delta):
+	camera = get_node("target/Camera").get_global_transform()
+	var dir = Vector3()
+	var is_moving = false
+	
 	if (is_moveable):
-		if (Input.is_action_pressed("tecla_a")):
-			rotation_degrees.y += rotation_spd
-			
-		if (Input.is_action_pressed("tecla_w")):
-			speed += (move_spd*delta) * global_transform.basis.z.normalized()
-			
-		if (Input.is_action_pressed("tecla_s")):
-			speed += (-move_spd*delta) * global_transform.basis.z.normalized()
-	
-		if (Input.is_action_pressed("tecla_d")):
-			rotation_degrees.y -= rotation_spd
+		if(Input.is_action_pressed("tecla_w")):
+			dir += -camera.basis[2]
+			is_moving = true
+		if(Input.is_action_pressed("tecla_s")):
+			dir += camera.basis[2]
+			is_moving = true
+		if(Input.is_action_pressed("tecla_a")):
+			dir += -camera.basis[0]
+			is_moving = true
+		if(Input.is_action_pressed("tecla_d")):
+			dir += camera.basis[0]
+			is_moving = true
 		
-	if (Input.is_action_just_released("tecla_a") || Input.is_action_just_released("tecla_d")):
-		speed = Vector3(0,0,0)
+		dir.y = 0
+		dir = dir.normalized()
 		
-	if (Input.is_action_just_released("tecla_w") || Input.is_action_just_released("tecla_s")):
-		speed = Vector3(0,0,0)
+		
+	speed.y += delta * gravity
 	
+	var hv = speed
+	hv.y = 0
+	
+	var new_pos = dir * move_spd
+	var accel = 1
+	
+	if (dir.dot(hv) > 0):
+		accel = 1
+		
+	hv = hv.linear_interpolate(new_pos, accel * delta)
+	
+	speed.x = hv.x
+	speed.z = hv.z
+			
+	speed = move_and_slide(speed, Vector3(0,1,0))	
+	
+	if is_moving:
+		
+		# Rotate the player to direction
+		var angle = atan2(hv.x, hv.z)
+		
+		var char_rot = character.get_rotation()
+		
+		char_rot.y = angle - 10
+		character.set_rotation(char_rot)
+	
+		
+		
+#		if (Input.is_action_pressed("tecla_a")):
+#			rotation_degrees.y += rotation_spd
+#
+#		if (Input.is_action_pressed("tecla_w")):
+#			speed += (move_spd*delta) * global_transform.basis.z.normalized()
+#
+#		if (Input.is_action_pressed("tecla_s")):
+#			speed += (-move_spd*delta) * global_transform.basis.z.normalized()
+#
+#		if (Input.is_action_pressed("tecla_d")):
+#			rotation_degrees.y -= rotation_spd
+#
+#	if (Input.is_action_just_released("tecla_a") || Input.is_action_just_released("tecla_d")):
+#		speed = Vector3(0,0,0)
+#
+#	if (Input.is_action_just_released("tecla_w") || Input.is_action_just_released("tecla_s")):
+#		speed = Vector3(0,0,0)
+#
 	if (Input.is_action_just_pressed("tecla_x")):
 		if (!is_grabbing):
 			grab_object()
