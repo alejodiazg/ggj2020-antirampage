@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SM_Hojas.obj-ab4c19104d7bd22b2c378f99cbec9469.mesh"
+
+[deps]
+
+files=[ "res://.import/SM_Hojas.obj-ab4c19104d7bd22b2c378f99cbec9469.mesh" ]
+
+source_file="res://assets/Props/SM_Hojas.obj"
+dest_files=[ "res://.import/SM_Hojas.obj-ab4c19104d7bd22b2c378f99cbec9469.mesh", "res://.import/SM_Hojas.obj-ab4c19104d7bd22b2c378f99cbec9469.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

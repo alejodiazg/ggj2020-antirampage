@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SM_Taza.obj-1f6c9d0eabaf6edc8a1639258c0c135d.mesh"
+
+[deps]
+
+files=[ "res://.import/SM_Taza.obj-1f6c9d0eabaf6edc8a1639258c0c135d.mesh" ]
+
+source_file="res://assets/props/SM_Taza.obj"
+dest_files=[ "res://.import/SM_Taza.obj-1f6c9d0eabaf6edc8a1639258c0c135d.mesh", "res://.import/SM_Taza.obj-1f6c9d0eabaf6edc8a1639258c0c135d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
