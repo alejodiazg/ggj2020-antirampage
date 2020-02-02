@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/SM_EscritorioC.obj-ff1e6c4efe06d06518dd6bec053d0610.mesh"
+
+[deps]
+
+files=[ "res://.import/SM_EscritorioC.obj-ff1e6c4efe06d06518dd6bec053d0610.mesh" ]
+
+source_file="res://assets/Props/SM_EscritorioC.obj"
+dest_files=[ "res://.import/SM_EscritorioC.obj-ff1e6c4efe06d06518dd6bec053d0610.mesh", "res://.import/SM_EscritorioC.obj-ff1e6c4efe06d06518dd6bec053d0610.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/SM_Hojas.obj-2fea1d8f71d2ec13347a1787db13c10f.mesh"
+path="res://.import/SM_Hojas.obj-ab4c19104d7bd22b2c378f99cbec9469.mesh"
 
 [deps]
 
-files=[ "res://.import/SM_Hojas.obj-2fea1d8f71d2ec13347a1787db13c10f.mesh" ]
+files=[ "res://.import/SM_Hojas.obj-ab4c19104d7bd22b2c378f99cbec9469.mesh" ]
 
-source_file="res://assets/props/SM_Hojas.obj"
-dest_files=[ "res://.import/SM_Hojas.obj-2fea1d8f71d2ec13347a1787db13c10f.mesh", "res://.import/SM_Hojas.obj-2fea1d8f71d2ec13347a1787db13c10f.mesh" ]
+source_file="res://assets/Props/SM_Hojas.obj"
+dest_files=[ "res://.import/SM_Hojas.obj-ab4c19104d7bd22b2c378f99cbec9469.mesh", "res://.import/SM_Hojas.obj-ab4c19104d7bd22b2c378f99cbec9469.mesh" ]
 
 [params]
 

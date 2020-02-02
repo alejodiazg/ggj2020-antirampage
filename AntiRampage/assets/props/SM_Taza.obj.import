@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/SM_Taza.obj-1f6c9d0eabaf6edc8a1639258c0c135d.mesh"
+path="res://.import/SM_Taza.obj-e39972958141582baeb9bb9f1d2fcb05.mesh"
 
 [deps]
 
-files=[ "res://.import/SM_Taza.obj-1f6c9d0eabaf6edc8a1639258c0c135d.mesh" ]
+files=[ "res://.import/SM_Taza.obj-e39972958141582baeb9bb9f1d2fcb05.mesh" ]
 
-source_file="res://assets/props/SM_Taza.obj"
-dest_files=[ "res://.import/SM_Taza.obj-1f6c9d0eabaf6edc8a1639258c0c135d.mesh", "res://.import/SM_Taza.obj-1f6c9d0eabaf6edc8a1639258c0c135d.mesh" ]
+source_file="res://assets/Props/SM_Taza.obj"
+dest_files=[ "res://.import/SM_Taza.obj-e39972958141582baeb9bb9f1d2fcb05.mesh", "res://.import/SM_Taza.obj-e39972958141582baeb9bb9f1d2fcb05.mesh" ]
 
 [params]
 

@@ -2,14 +2,14 @@
 
 importer="wavefront_obj"
 type="Mesh"
-path="res://.import/SM_Mouse.obj-be867fa2abf26498b700e267e7c9341c.mesh"
+path="res://.import/SM_Mouse.obj-a68b2c4dd411d1b7c9e62c93c6a1ac23.mesh"
 
 [deps]
 
-files=[ "res://.import/SM_Mouse.obj-be867fa2abf26498b700e267e7c9341c.mesh" ]
+files=[ "res://.import/SM_Mouse.obj-a68b2c4dd411d1b7c9e62c93c6a1ac23.mesh" ]
 
-source_file="res://assets/props/SM_Mouse.obj"
-dest_files=[ "res://.import/SM_Mouse.obj-be867fa2abf26498b700e267e7c9341c.mesh", "res://.import/SM_Mouse.obj-be867fa2abf26498b700e267e7c9341c.mesh" ]
+source_file="res://assets/Props/SM_Mouse.obj"
+dest_files=[ "res://.import/SM_Mouse.obj-a68b2c4dd411d1b7c9e62c93c6a1ac23.mesh", "res://.import/SM_Mouse.obj-a68b2c4dd411d1b7c9e62c93c6a1ac23.mesh" ]
 
 [params]
 
