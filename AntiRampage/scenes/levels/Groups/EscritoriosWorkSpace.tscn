@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/props/env_props/EscritorioA.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/props/env_props/SillaA.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/props/env_props/Teclado.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/props/env_props/Monitor.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/props/env_props/Mouse.tscn" type="PackedScene" id=5]
+
+[node name="EscritoriosEmpleados" type="Spatial"]
+
+[node name="EscritorioA" parent="." instance=ExtResource( 1 )]
+mass = 10.0
+gravity_scale = 1.0
+linear_damp = -1.0
+angular_damp = -1.0
+
+[node name="Monitor" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00582409, 7.6928, 4.58952 )
+mass = 10.0
+gravity_scale = 1.0
+linear_damp = -1.0
+angular_damp = -1.0
+
+[node name="Teclado" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.1, 0, -8.74228e-09, 0, 0.1, 0, 8.74228e-09, 0, -0.1, 0.425199, 7.77493, 0.948935 )
+
+[node name="Mouse" parent="." instance=ExtResource( 5 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -5.15843, 7.74807, 1.03125 )
+
+[node name="SillaA" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00582409, 0.0615797, -4.1675 )
