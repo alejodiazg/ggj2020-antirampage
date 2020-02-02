@@ -15,5 +15,4 @@ dest_files=[ "res://.import/SM_Portaretrato.obj-806887adb9eaa671cb7890595dd3e24b
 
 generate_tangents=true
 scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
 optimize_mesh=true
