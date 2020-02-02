@@ -16,10 +16,10 @@ var tofix
 var actual_fixer
 var actual_tofix
 var fixer1
-var actual_fixer_logo 
+var actual_fixer_logo
 var actual_fixer_texture_gui
-onready var number_label 
-onready var points_label 
+onready var number_label
+onready var points_label
 var bgm_player
 
 # Called when the node enters the scene tree for the first time.
@@ -36,13 +36,13 @@ func _ready():
 	fixer1 = root.get_node("level/Fixer1")
 	actual_fixer_texture_gui = GUI.get_node("tofix_texture")
 	fixers = [fixer1]
-	
-	updateFixer(0)
+
+#	updateFixer(0)
 
 	timer = Timer.new()
 	timer.set_wait_time(time_left)
-	timer.connect("timeout",self,"_on_timer_timeout") 
-	
+	timer.connect("timeout",self,"_on_timer_timeout")
+
 	playButton.connect("pressed",self,"game_start")
 	character.is_moveable = false
 	add_child(timer) #to process
@@ -78,7 +78,7 @@ func game_start():
 	bgm_player.stream = bgm_game
 	bgm_player.play()
 
-	
+
 func updateFixer(i):
 	actual_fixer = fixers[i]
 	actual_fixer_logo = actual_fixer.icon

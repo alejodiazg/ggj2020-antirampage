@@ -33,7 +33,7 @@ autoplay = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 1 )
 
-[node name="level" parent="." instance=ExtResource( 4 )]
-
 [node name="GUI" parent="." instance=ExtResource( 1 )]
 visible = false
+
+[node name="level" parent="." instance=ExtResource( 4 )]
