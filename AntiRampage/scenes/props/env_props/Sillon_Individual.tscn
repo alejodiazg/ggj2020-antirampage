@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=2]
 [ext_resource path="res://assets/Props_Finales/SM_Sillon_Individual.obj" type="ArrayMesh" id=3]
 
-[node name="Hojas" instance=ExtResource( 1 )]
+[node name="SillonIndividual" instance=ExtResource( 1 )]
 mesh = ExtResource( 3 )
 material = ExtResource( 2 )
 
