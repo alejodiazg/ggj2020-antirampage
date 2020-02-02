@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/props/interactives/base/BaseInteractiveObjectl.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/characters/grab_ray/GrabRay.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/props/objectives/base/BaseObjective.tscn" type="PackedScene" id=4]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -19,6 +20,14 @@ bounce = 0.1
 
 [sub_resource type="SpatialMaterial" id=6]
 albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="PhysicsMaterial" id=7]
+bounce = 1.0
+
+[sub_resource type="CylinderMesh" id=8]
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_color = Color( 0.00784314, 0, 1, 1 )
 
 [node name="Spatial" type="Spatial"]
 
@@ -50,9 +59,6 @@ transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, -10.6488 )
 [node name="KinematicBody" parent="Spatial" index="0"]
 collision_mask = 0
 
-[node name="CollisionShape2" parent="Spatial/KinematicBody" index="1"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-
 [node name="dino" parent="Spatial/KinematicBody" index="2"]
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
 
@@ -62,5 +68,20 @@ cast_to = Vector3( 0, 0, 10 )
 
 [node name="CSGMesh" parent="Spatial/KinematicBody" index="4"]
 transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+
+[node name="Objective1" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.0471065, 0, 0.99889, 0, 1, 0, -0.99889, 0, -0.0471065, 0, 1.27267, 7.94409 )
+repaired_by = "TestObject"
+
+[node name="Objective2Azul" parent="." instance=ExtResource( 4 )]
+transform = Transform( -0.998095, 0, 0.0616928, 0, 1, 0, -0.0616928, 0, -0.998095, 18.7388, 1.69489, 0 )
+repaired_by = "Azul"
+
+[node name="AzulInteractive" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38667, 1.74352, 0.0894585 )
+physics_material_override = SubResource( 7 )
+mesh = SubResource( 8 )
+material = SubResource( 9 )
+object_name = "Azul"
 
 [editable path="Spatial"]
