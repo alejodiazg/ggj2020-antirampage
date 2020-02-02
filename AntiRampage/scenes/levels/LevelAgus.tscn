@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=2]
+[gd_scene load_steps=102 format=2]
 
 [ext_resource path="res://assets/Enviroment/SM_Level.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scenes/levels/Groups/EscritoriosWorkSpace.tscn" type="PackedScene" id=2]
@@ -51,6 +51,8 @@
 [ext_resource path="res://scenes/props/env_props/Cafetera.tscn" type="PackedScene" id=49]
 [ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=50]
 [ext_resource path="res://assets/MaterialPadre.material" type="Material" id=51]
+[ext_resource path="res://scenes/levels/Groups/COmedor.tscn" type="PackedScene" id=52]
+[ext_resource path="res://scenes/levels/Groups/BossRoom.tscn" type="PackedScene" id=53]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 points = PoolVector3Array( -95.489, 4.43129, 66.3507, -95.2649, 30.3362, 67.0678, -94.6752, 5.73371, 63.0319, -94.6718, 29.3871, 63.0452, -85.6879, 4.78993, 124.538, -85.6879, 30.3362, 124.538, -79.9424, 5.81538, 63.2361, -79.9424, 29.3108, 63.2361, -79.7939, 29.5484, 122.569, -79.7494, 5.5066, 122.746 )
@@ -1097,11 +1099,17 @@ transform = Transform( -1.17225e-07, 0, 1, 0, 1, 0, -1, 0, -1.17225e-07, -94.364
 
 [node name="Salas_Lucio" type="Node" parent="."]
 
+[node name="BossRoom" parent="Salas_Lucio" instance=ExtResource( 53 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 125.541, 0, -278.817 )
+
+[node name="COmedor" parent="Salas_Lucio" instance=ExtResource( 52 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -134.335, 6.62959, -252.077 )
+
 [node name="SalaCopiado" parent="Salas_Lucio" instance=ExtResource( 29 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -163.326, 0, 33.7489 )
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, -165.153, 0, 31.5339 )
 
 [node name="SalaReuniones" parent="Salas_Lucio" instance=ExtResource( 20 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -140.226, 0, 108.712 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -143.654, 0, 143.379 )
 
 [node name="Sala_Reparacion" type="Node" parent="."]
 
