@@ -1,9 +1,8 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/props/env_props/Cafetera.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/props/env_props/Dispenser.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/Sounds/techrex.ogg" type="AudioStream" id=5]
 [ext_resource path="res://assets/Paredes.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://assets/PisoEntero.obj" type="ArrayMesh" id=7]
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=8]
@@ -226,9 +225,6 @@ shape = SubResource( 30 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody_piso3"]
 shape = SubResource( 31 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
 
 [node name="Cafetera" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -108.217, 8.39178, -58.2668 )
