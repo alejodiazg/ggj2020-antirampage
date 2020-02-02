@@ -1,0 +1,5 @@
+[gd_resource type="StreamTexture" format=2]
+
+[resource]
+flags = 4
+load_path = "res://.import/bebida.png-387d1146a6ec5ffc057329b0a35e7526.stex"

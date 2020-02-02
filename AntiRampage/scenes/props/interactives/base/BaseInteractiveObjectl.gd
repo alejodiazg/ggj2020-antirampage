@@ -3,11 +3,8 @@ class_name BaseInteractiveObject
 extends "res://scenes/props/base/BaseProp.gd"
 
 export(String) var object_name
-export(ImageTexture) var icon
+export(Texture) var icon
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var original_parent
 var holder
 var old_rotation
