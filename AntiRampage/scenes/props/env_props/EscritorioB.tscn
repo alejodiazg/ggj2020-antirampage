@@ -4,35 +4,36 @@
 [ext_resource path="res://scenes/props/base/BaseProp.gd" type="Script" id=2]
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=3]
 
-[sub_resource type="PhysicsMaterial" id=5]
+[sub_resource type="PhysicsMaterial" id=1]
 
-[sub_resource type="ConvexPolygonShape" id=6]
+[sub_resource type="ConvexPolygonShape" id=2]
 points = PoolVector3Array( -9.87188, -0.0809169, 2.93491, -9.87188, -0.0809169, 3.58219, -9.87188, 6.55363, 2.93491, -9.87188, 6.55363, 3.58219, -9.79865, 2.7987, 2.86456, -9.29784, 2.7987, 2.86456, -9.2401, 0.0778613, 3.56282, -9.2401, 6.39486, 3.56282, -9.22461, -0.0809169, 2.93491, -9.22461, 6.55363, 2.93491 )
 
-[sub_resource type="ConvexPolygonShape" id=7]
+[sub_resource type="ConvexPolygonShape" id=3]
 points = PoolVector3Array( -9.87188, 2.67026, 0.345505, -9.87188, 2.67026, 2.77302, -9.87188, 3.47943, 0.345505, -9.87188, 3.47943, 2.77302, -9.22461, 2.67026, 0.345505, -9.22461, 2.67026, 2.77302, -9.22461, 3.47943, 0.345505, -9.22461, 3.47943, 2.77302 )
 
-[sub_resource type="ConvexPolygonShape" id=8]
+[sub_resource type="ConvexPolygonShape" id=4]
 points = PoolVector3Array( -9.87188, 2.67026, -2.89118, -9.87188, 2.67026, 0.345505, -9.87188, 3.47943, -2.89118, -9.87188, 3.47943, 0.345505, -9.22461, 2.67026, -2.89118, -9.22461, 2.67026, 0.345505, -9.22461, 3.47943, -2.89118, -9.22461, 3.47943, 0.345505 )
 
-[sub_resource type="ConvexPolygonShape" id=9]
+[sub_resource type="ConvexPolygonShape" id=5]
 points = PoolVector3Array( -9.87188, -0.0809169, -3.86218, -9.87188, -0.0809169, -3.05312, -9.87188, 6.55363, -3.86218, -9.87188, 6.55363, -3.05312, -9.79865, 2.7987, -3.00112, -9.29784, 2.7987, -3.00112, -9.22461, -0.0809169, -3.86218, -9.22461, -0.0809169, -3.05312, -9.22461, 6.55363, -3.86218, -9.22461, 6.55363, -3.05312 )
 
-[sub_resource type="ConvexPolygonShape" id=10]
+[sub_resource type="ConvexPolygonShape" id=6]
 points = PoolVector3Array( 5.2681, 0.824464, 0.0989193, 5.2681, 0.824464, 3.679, 5.2681, 6.42723, 0.0989193, 5.2681, 6.42723, 3.679, 5.50299, -0.0809169, 2.77267, 5.5805, 0.0462333, 3.36746, 5.6339, 1.19433, 3.78524, 5.63563, 6.18434, 3.935, 5.70779, 2.728, 3.8628, 8.76106, 2.728, 3.8628, 8.81015, 6.18434, 3.935, 8.81132, 1.19433, 3.78524, 9.06205, -0.0809169, 3.58176, 9.19239, 0.7752, 0.0591747, 9.19551, 6.4985, 3.7155, 9.2102, 6.52719, 0.0379605, 9.8117, 0.00352029, 3.54264, 9.8117, 6.4692, 3.54264, 9.87142, -0.0809169, 2.93465, 9.87142, 2.67071, 0.0218368, 9.87142, 3.47859, 0.0218368, 9.87142, 6.55363, 2.93465 )
 
-[sub_resource type="ConvexPolygonShape" id=11]
+[sub_resource type="ConvexPolygonShape" id=7]
 points = PoolVector3Array( 5.2681, 0.824464, -0.0560225, 5.2681, 6.42723, -0.0560225, 5.27257, 0.829236, -3.9431, 5.27257, 6.42092, -3.9431, 5.50299, -0.0809169, -2.72873, 5.62279, 0.115606, -3.4471, 6.31191, -0.0809169, -2.72873, 9.06205, -0.0809169, -3.86166, 9.15578, 0.829236, -3.9431, 9.15578, 6.42092, -3.9431, 9.19239, 0.7752, -0.0162856, 9.2102, 6.52719, 0.00492441, 9.67104, 0.202381, -3.7028, 9.67104, 6.27034, -3.7028, 9.87142, -0.0809169, -3.05265, 9.87142, 2.67071, 0.021045, 9.87142, 3.47859, 0.021045, 9.87142, 6.55363, -3.05265 )
 
-[sub_resource type="ConvexPolygonShape" id=12]
+[sub_resource type="ConvexPolygonShape" id=8]
 points = PoolVector3Array( -5.82603, 7.52519, -4.02402, -5.82603, 7.52519, 3.74402, -5.46134, 7.03974, 3.5654, -5.14538, 6.744, -3.54188, -5.14538, 6.744, 3.26189, 5.17768, 6.55438, -4.02402, 5.17768, 6.55438, 3.74402, 9.07502, 6.56449, -3.9431, 9.17106, 6.55794, 3.7155, 9.53991, 6.57505, -3.7028, 9.8117, 6.55807, 3.55303, 10.0337, 7.52519, -4.02402, 10.0337, 7.52519, 3.74402 )
 
-[sub_resource type="ConvexPolygonShape" id=13]
+[sub_resource type="ConvexPolygonShape" id=9]
 points = PoolVector3Array( -10.0333, 7.03974, -4.02402, -10.0333, 7.03974, 3.74402, -10.0333, 7.52519, -4.02402, -10.0333, 7.52519, 3.74402, -9.8117, 6.56932, 3.46678, -9.78875, 6.57505, -3.7028, -9.22406, 6.55438, -3.8613, -9.22406, 6.55438, 3.5813, -6.00659, 6.744, -3.54188, -6.00659, 6.744, 3.26189, -5.92277, 7.03974, 3.5654, -5.82603, 7.52519, -4.02402, -5.82603, 7.52519, 3.74402 )
 
 [node name="EscritorioA" type="RigidBody"]
-mass = 110.87
-physics_material_override = SubResource( 5 )
+physics_material_override = SubResource( 1 )
+linear_damp = 5.0
+angular_damp = 5.0
 script = ExtResource( 2 )
 
 [node name="SM_Dispenser" type="MeshInstance" parent="."]
@@ -40,25 +41,25 @@ mesh = ExtResource( 1 )
 material/0 = ExtResource( 3 )
 
 [node name="CollisionShape8" type="CollisionShape" parent="."]
-shape = SubResource( 6 )
+shape = SubResource( 2 )
 
 [node name="CollisionShape7" type="CollisionShape" parent="."]
-shape = SubResource( 7 )
+shape = SubResource( 3 )
 
 [node name="CollisionShape6" type="CollisionShape" parent="."]
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
 [node name="CollisionShape5" type="CollisionShape" parent="."]
-shape = SubResource( 9 )
+shape = SubResource( 5 )
 
 [node name="CollisionShape4" type="CollisionShape" parent="."]
-shape = SubResource( 10 )
+shape = SubResource( 6 )
 
 [node name="CollisionShape3" type="CollisionShape" parent="."]
-shape = SubResource( 11 )
+shape = SubResource( 7 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="."]
-shape = SubResource( 12 )
+shape = SubResource( 8 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-shape = SubResource( 13 )
+shape = SubResource( 9 )

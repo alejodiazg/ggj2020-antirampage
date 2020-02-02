@@ -1,4 +1,4 @@
-extends StaticBody
+extends RigidBody
 export(String) var repaired_by
 export(int) var points_given = 100
 export(String) var game_manager_path = "../gameManager"

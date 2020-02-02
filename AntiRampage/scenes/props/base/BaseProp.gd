@@ -36,7 +36,9 @@ func material_set(new_material):
 	material = new_material
 	$MeshInstance.material_override = new_material
 
-
+func _integrate_forces(delta):
+	set_friction(1)
+	set_bounce(0)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

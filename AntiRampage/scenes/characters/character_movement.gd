@@ -13,7 +13,7 @@ var prev_rot_z
 var prev_rot_x
 const SPEED = 40
 const ACCELERATION = 10
-const DE_ACCELERATION = 3
+const DE_ACCELERATION = 10
 
 func _ready():
 	character = get_node(".")
@@ -58,8 +58,9 @@ func input_processing(delta):
 		dir = dir.normalized()
 		
 		if (!rotating):
-			speed.y += delta * gravity
-		
+			speed.y += delta * (gravity * 30)
+
+			
 		var hv = speed
 		hv.y = 0
 		
@@ -73,9 +74,9 @@ func input_processing(delta):
 		
 		speed.x = hv.x
 		speed.z = hv.z
-				
-		speed = move_and_slide(speed, Vector3(0,1,0))	
 		
+		speed = move_and_slide(speed, Vector3(0,1,0))	
+		print(speed)
 		if is_moving:
 			
 			get_node("Animadino/AnimationPlayer").play("default")
@@ -88,7 +89,9 @@ func input_processing(delta):
 			character.set_rotation(char_rot)
 		else:
 			get_node("Animadino/AnimationPlayer").stop()
-	
+
+		if (character.global_transform.origin.y != 0):
+			character.global_transform.origin.y= 0;
 	
 	if (Input.is_action_just_pressed("rotar")):
 		rotating = true
@@ -102,29 +105,6 @@ func input_processing(delta):
 		rotation_degrees.z = prev_rot_z
 		rotation_degrees.x = prev_rot_x
 
-	if (Input.is_action_just_pressed("tecla_x")):
-		if (!is_grabbing):
-			grab_object()
-		else:
-			release_object()
-		
-	if (Input.is_action_just_released("tecla_x")):
-		pass
-		
-
-
-func grab_object():
-	while (rotation_degrees.x < 20):
-		rotation_degrees.x += 1
-	is_grabbing = true
-	is_moveable = false
-
-
-func release_object():
-	while (rotation_degrees.x > 0):
-		rotation_degrees.x -= 1
-	is_grabbing = false
-	is_moveable = true
 
 func rotate_axis(mouse):
 	var cameraObj = get_node("target/Camera")
@@ -138,7 +118,9 @@ func rotate_axis(mouse):
 	var anglex = deg2rad(mouse.x - screenPoint.x - rotation.x);
 	var angley = deg2rad(mouse.y - screenPoint.y - rotation.y);
 	
-	if (abs(rotation_degrees.x) < 45 || abs(rotation_degrees.x) > 45 &&  abs(rotation_degrees.x + angley) < 45):
+	if (abs(rotation_degrees.x) < 20 || abs(rotation_degrees.x) > 20 &&  abs(rotation_degrees.x + angley) < 20):
+		translation.y = 0
+		print(translation.y)
 		rotation_degrees.x += angley
 	
 	if (abs(rotation_degrees.z) < 45 || abs(rotation_degrees.z) > 45 &&  abs(rotation_degrees.z + anglex) < 45):
