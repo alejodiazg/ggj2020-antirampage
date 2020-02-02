@@ -1,11 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/Props_Finales/SM_Portaretrato.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scenes/props/base/BaseProp.gd" type="Script" id=2]
-[ext_resource path="res://assets/Props_Finales/AtlasColor_B.jpg" type="Texture" id=3]
-
-[sub_resource type="SpatialMaterial" id=1]
-albedo_texture = ExtResource( 3 )
+[ext_resource path="res://assets/materials/Material_Atlas_B.tres" type="Material" id=3]
 
 [sub_resource type="ConvexPolygonShape" id=2]
 points = PoolVector3Array( -1.2544, 1.49464, -0.407241, -1.2544, 1.49464, -0.373795, -1.2544, 1.72833, -0.474034, -1.2544, 2.59655, -0.707794, -1.19277, 2.79849, -0.381799, -1.1827, 2.73004, -0.698482, -1.17464, 2.78907, -0.478175, -0.252121, 1.49464, -0.540795, 0.348844, 1.49464, -0.540795, 1.23787, 2.78907, -0.478175, 1.24593, 2.73004, -0.698482, 1.25601, 2.79849, -0.381799, 1.31764, 1.49464, -0.407241, 1.31764, 1.49464, -0.373795, 1.31764, 1.72833, -0.474034, 1.31764, 2.59655, -0.707794 )
@@ -21,10 +18,14 @@ points = PoolVector3Array( -0.519533, -0.409448, -1.30902, -0.519533, -0.375953,
 
 [node name="Portaretrato" type="RigidBody"]
 script = ExtResource( 2 )
-
-[node name="SM_Dispenser" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )
-material/0 = SubResource( 1 )
+material = ExtResource( 3 )
+generate_collision = false
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+material_override = ExtResource( 3 )
+mesh = ExtResource( 1 )
+material/0 = null
 
 [node name="CollisionShape4" type="CollisionShape" parent="."]
 shape = SubResource( 2 )

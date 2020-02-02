@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://scenes/gameManager/gameManager.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=2]
@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/Paredes.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://assets/PisoEntero.obj" type="ArrayMesh" id=7]
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=8]
-[ext_resource path="res://scenes/props/interactives/fax.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/props/interactives/Plant.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/props/env_props/EscritorioA.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/props/env_props/EscritorioC.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/props/objectives/base/BaseObjective.tscn" type="PackedScene" id=12]
@@ -21,6 +21,7 @@
 [ext_resource path="res://scenes/props/env_props/Cactus.tscn" type="PackedScene" id=19]
 [ext_resource path="res://scenes/props/env_props/PortaRetrato.tscn" type="PackedScene" id=20]
 [ext_resource path="res://scenes/props/env_props/PuertaC.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/props/interactives/fax.tscn" type="PackedScene" id=22]
 
 [sub_resource type="Environment" id=1]
 background_mode = 1
@@ -407,6 +408,8 @@ transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -41.2305,
 [node name="Portaretrato3" parent="Oficina" instance=ExtResource( 20 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4449, 7.8988, 38.645 )
 
-[node name="RigidBody" parent="." instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.56873, 35.8801 )
-object_name = "SimplePlant"
+[node name="BaseProp" parent="." instance=ExtResource( 22 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 58.2986, 0.0615797, -74.3786 )
+
+[node name="Plant" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 54 )

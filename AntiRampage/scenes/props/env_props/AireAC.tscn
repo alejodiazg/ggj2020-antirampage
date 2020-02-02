@@ -1,22 +1,7 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://assets/Props_Finales/SM_Aire_Acondicionado.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scenes/props/base/BaseProp.gd" type="Script" id=2]
-
-[sub_resource type="ConvexPolygonShape" id=1]
-points = PoolVector3Array( -5.1953, 0.430714, -0.320514, -5.1953, 0.612946, -0.138228, -5.1953, 0.795178, 0.165384, -5.12299, 0.612946, 0.162443, -5.11564, 0.433493, -0.13684, 5.11586, 0.435521, -0.135825, 5.12312, 0.612946, 0.160074, 5.1953, 0.43275, -0.317459, 5.1953, 0.612946, -0.137211, 5.1953, 0.793141, 0.16301 )
-
-[sub_resource type="ConvexPolygonShape" id=2]
-points = PoolVector3Array( -5.1953, 0.318694, -0.322889, -5.10336, 0.439113, 0.100686, -5.08244, 0.379438, 0.338141, -5.0682, 0.438704, -0.196182, -4.99099, 0.321069, 0.332293, 5.04937, 0.321069, 0.332293, 5.101, 0.438407, -0.195141, 5.10333, 0.438434, 0.099668, 5.1953, 0.319373, -0.319156 )
-
-[sub_resource type="ConvexPolygonShape" id=3]
-points = PoolVector3Array( -5.17298, 0.30275, 0.283074, -5.16611, 0.321058, 0.507324, -5.16611, 0.6129, -0.134563, -5.16607, 0.787859, 0.623961, -5.16611, 0.78796, 0.15717, -5.10773, 0.321058, -0.309823, -5.04938, 0.6129, 0.624164, -5.04938, 0.78796, 0.624164, -4.99099, 0.321058, -0.309823, -4.99099, 0.496209, -0.309823, -4.99099, 0.78796, 0.15717, -4.98626, 0.308458, 0.341696 )
-
-[sub_resource type="ConvexPolygonShape" id=4]
-points = PoolVector3Array( -5.1953, 3.18043, 0.683784, -5.1953, 3.35653, 0.273044, -5.1953, 3.47389, 0.0968748, -5.16611, 3.29819, 0.740803, -5.16611, 3.41484, 0.507352, -5.16611, 3.5316, 0.215624, -4.69886, 3.19735, 0.767431, 4.64048, 3.19735, 0.767431, 5.10774, 3.29819, 0.740803, 5.10774, 3.41484, 0.507352, 5.10774, 3.5316, 0.0988647, 5.10774, 3.5316, 0.215624, 5.1953, 3.17844, 0.686436, 5.1953, 3.35653, 0.271055, 5.1953, 3.47521, 0.0928952 )
-
-[sub_resource type="ConvexPolygonShape" id=5]
-points = PoolVector3Array( -5.1953, 2.94723, 0.799143, -5.1953, 3.06464, 0.740414, -5.16611, 3.00627, 0.916017, -5.16611, 3.18139, 0.799309, 5.10774, 3.00627, 0.916017, 5.10774, 3.18139, 0.799309, 5.1953, 2.9459, 0.798812, 5.1953, 3.06464, 0.739419, 5.1953, 3.18338, 0.739419 )
 
 [sub_resource type="ConvexPolygonShape" id=6]
 points = PoolVector3Array( 5.04077, 0.874176, 0.604118, 5.04698, 2.97769, 0.85843, 5.0494, 0.788051, 0.682589, 5.0494, 0.904965, 0.740935, 5.0494, 2.13055, 0.974357, 5.0494, 2.71428, 1.03274, 5.16609, 2.9479, 0.624243, 5.22447, 0.788051, 0.624243, 5.22447, 0.904965, 0.740935, 5.22447, 1.4889, 0.857626, 5.22447, 2.48066, 1.03274, 5.22447, 2.71428, 1.03274, 5.22447, 2.9479, 0.624243, 5.22447, 2.9479, 0.916012 )
@@ -59,25 +44,12 @@ points = PoolVector3Array( -5.1953, 0.32008, 0.276361, -5.10686, -0.0291871, 0.8
 
 [node name="BancoA" type="RigidBody"]
 script = ExtResource( 2 )
+mesh = ExtResource( 1 )
+generate_collision = false
 
-[node name="SM_Dispenser" type="MeshInstance" parent="."]
+[node name="MeshInstance" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )
 material/0 = null
-
-[node name="CollisionShape18" type="CollisionShape" parent="."]
-shape = SubResource( 1 )
-
-[node name="CollisionShape17" type="CollisionShape" parent="."]
-shape = SubResource( 2 )
-
-[node name="CollisionShape16" type="CollisionShape" parent="."]
-shape = SubResource( 3 )
-
-[node name="CollisionShape15" type="CollisionShape" parent="."]
-shape = SubResource( 4 )
-
-[node name="CollisionShape14" type="CollisionShape" parent="."]
-shape = SubResource( 5 )
 
 [node name="CollisionShape13" type="CollisionShape" parent="."]
 shape = SubResource( 6 )
