@@ -5,7 +5,7 @@
 [ext_resource path="res://assets/Props_Finales/SM_Cuadro.obj" type="ArrayMesh" id=3]
 
 [node name="CuadroA" instance=ExtResource( 2 )]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.00582409, 0.0615797, 0.0894585 )
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -0.00748253, 0.0677832, 0.0874935 )
 mesh = ExtResource( 3 )
 material = ExtResource( 1 )
 
