@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/UI/menu/PNG/background.png" type="Texture" id=1]
 [ext_resource path="res://scenes/UI/menu/PNG/FlyerGomezRex.png" type="Texture" id=2]
 [ext_resource path="res://scenes/UI/menu/PNG/buttonLarge.png" type="Texture" id=3]
 [ext_resource path="res://scenes/UI/menu/Font ui/GAME ROBOT-Light.otf" type="DynamicFontData" id=4]
-[ext_resource path="res://assets/sounds/menusaurus.ogg" type="AudioStream" id=5]
+[ext_resource path="res://scenes/UI/menu/PlayButton.gd" type="Script" id=5]
+[ext_resource path="res://assets/sounds/menusaurus.ogg" type="AudioStream" id=6]
 
 [sub_resource type="AnimatedTexture" id=1]
 fps = 11.3
@@ -105,6 +106,8 @@ rect_min_size = Vector2( 200, 70 )
 texture_normal = ExtResource( 3 )
 texture_hover = SubResource( 1 )
 expand = true
+script = ExtResource( 5 )
+animation_player_path = NodePath("../../../Logo/AnimationPlayer")
 
 [node name="Label" type="Label" parent="Control/VBoxContainer/PlayButton"]
 anchor_left = 0.5
@@ -118,18 +121,18 @@ margin_bottom = 21.5
 custom_fonts/font = SubResource( 2 )
 text = "Jugar"
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Logo" type="Node2D" parent="."]
 
-[node name="Flyer" type="Sprite" parent="Node2D"]
+[node name="Flyer" type="Sprite" parent="Logo"]
 position = Vector2( 467.638, 717.61 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Logo"]
 autoplay = "Intro"
 anims/Intro = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
 autoplay = true
 [connection signal="pressed" from="Control/VBoxContainer/PlayButton" to="Control" method="_on_PlayButton_pressed"]
