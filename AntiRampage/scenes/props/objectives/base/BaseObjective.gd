@@ -1,5 +1,6 @@
 extends StaticBody
-export(String) var repaired_by 
+export(String) var repaired_by
+export(int) var points_given = 100
 
 # Declare member variables here. Examples:
 # var a = 2
