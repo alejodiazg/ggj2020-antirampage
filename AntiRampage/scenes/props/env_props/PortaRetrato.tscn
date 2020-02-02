@@ -1,40 +1,14 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/Props_Finales/SM_Portaretrato.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://scenes/props/base/BaseProp.gd" type="Script" id=2]
-[ext_resource path="res://assets/materials/Material_Atlas_B.tres" type="Material" id=3]
+[ext_resource path="res://assets/MaterialMadre.material" type="Material" id=2]
+[ext_resource path="res://scenes/props/base/BaseProp.tscn" type="PackedScene" id=3]
 
-[sub_resource type="ConvexPolygonShape" id=2]
-points = PoolVector3Array( -1.2544, 1.49464, -0.407241, -1.2544, 1.49464, -0.373795, -1.2544, 1.72833, -0.474034, -1.2544, 2.59655, -0.707794, -1.19277, 2.79849, -0.381799, -1.1827, 2.73004, -0.698482, -1.17464, 2.78907, -0.478175, -0.252121, 1.49464, -0.540795, 0.348844, 1.49464, -0.540795, 1.23787, 2.78907, -0.478175, 1.24593, 2.73004, -0.698482, 1.25601, 2.79849, -0.381799, 1.31764, 1.49464, -0.407241, 1.31764, 1.49464, -0.373795, 1.31764, 1.72833, -0.474034, 1.31764, 2.59655, -0.707794 )
-
-[sub_resource type="ConvexPolygonShape" id=3]
-points = PoolVector3Array( -0.352517, 0.792911, -0.707794, -0.352517, 0.792911, -0.674381, -0.352517, 0.960021, -0.607588, -0.319052, 1.02682, -0.540795, -0.319052, 1.2271, -0.707794, -0.300842, 1.47605, -0.365805, -0.285662, 1.3607, -0.373795, -0.285662, 1.46087, -0.574175, -0.255642, 1.49847, -0.371813, -0.252272, 1.49431, -0.540795, 0.348824, 1.3607, -0.373795, 0.348824, 1.46087, -0.574175, 0.348824, 1.49431, -0.540795, 0.35259, 1.49847, -0.371813, 0.382214, 1.02682, -0.540795, 0.382214, 1.2271, -0.707794, 0.415755, 0.792911, -0.707794, 0.415755, 0.792911, -0.674381, 0.415755, 1.02682, -0.574175 )
-
-[sub_resource type="ConvexPolygonShape" id=4]
-points = PoolVector3Array( -1.25415, -0.342743, 0.461283, -1.25415, -0.209026, 0.461283, -1.25415, 0.0580946, 0.394418, -1.25415, 1.92856, -0.106417, -1.25415, 2.7971, -0.373795, -1.22188, -0.369362, 0.222809, -1.20857, -0.352758, 0.124244, -1.11976, 1.343, -0.330154, 1.18296, 1.343, -0.330154, 1.27177, -0.352758, 0.124244, 1.28508, -0.369362, 0.222809, 1.31735, -0.342743, 0.461283, 1.31735, -0.209026, 0.461283, 1.31735, 0.0580946, 0.394418, 1.31735, 1.92856, -0.106417, 1.31735, 2.7971, -0.373795 )
-
-[sub_resource type="ConvexPolygonShape" id=5]
-points = PoolVector3Array( -0.519533, -0.409448, -1.30902, -0.519533, -0.375953, -1.5095, -0.519533, -0.375953, -1.2756, -0.519533, -0.309118, -1.5095, -0.519533, -0.309118, -1.24217, -0.519533, -0.242436, -1.476, -0.519533, -0.208941, -1.44257, -0.419294, 0.325283, -0.908383, -0.419294, 0.391966, -0.874957, -0.385845, 0.525637, -1.07536, -0.385845, 0.659155, -0.741331, -0.385845, 0.759331, -0.908383, -0.352504, 0.72599, -0.707905, -0.319055, 1.16019, -0.741331, -0.319055, 1.16019, -0.707905, 0.382293, 1.16019, -0.741331, 0.382293, 1.16019, -0.707905, 0.415634, 1.02652, -0.808183, 0.449083, 0.72599, -0.707905, 0.482531, 0.325283, -0.908383, 0.482531, 0.525637, -1.07536, 0.58277, -0.409448, -1.30902, 0.58277, -0.375953, -1.5095, 0.58277, -0.375953, -1.2756, 0.58277, -0.309118, -1.5095, 0.58277, -0.242436, -1.476, 0.58277, -0.242436, -1.20875, 0.58277, -0.142259, -1.40922 )
-
-[node name="Portaretrato" type="RigidBody"]
-script = ExtResource( 2 )
+[node name="Portarretratos" instance=ExtResource( 3 )]
 mesh = ExtResource( 1 )
-material = ExtResource( 3 )
-generate_collision = false
+material = ExtResource( 2 )
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
-material_override = ExtResource( 3 )
+[node name="MeshInstance" parent="." index="0"]
+material_override = ExtResource( 2 )
 mesh = ExtResource( 1 )
 material/0 = null
-
-[node name="CollisionShape4" type="CollisionShape" parent="."]
-shape = SubResource( 2 )
-
-[node name="CollisionShape3" type="CollisionShape" parent="."]
-shape = SubResource( 3 )
-
-[node name="CollisionShape2" type="CollisionShape" parent="."]
-shape = SubResource( 4 )
-
-[node name="CollisionShape" type="CollisionShape" parent="."]
-shape = SubResource( 5 )

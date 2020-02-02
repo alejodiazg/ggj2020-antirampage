@@ -1,54 +1,14 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/Props_Finales/SM_Pizarron.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://scenes/props/base/BaseProp.gd" type="Script" id=2]
+[ext_resource path="res://scenes/props/base/BaseProp.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=3]
 
-[sub_resource type="ConvexPolygonShape" id=1]
-points = PoolVector3Array( -5.33659, 2.28158, -0.161938, -5.33659, 2.28158, 0.534002, -5.33659, 10.8665, -0.161938, -5.33659, 10.8665, 0.534002, -4.94971, 2.28158, -0.161938, -4.94971, 2.28158, 0.534002, -4.94971, 10.8665, -0.161938, -4.94971, 10.8665, 0.534002, -4.09912, 9.6287, -0.0845509, -4.07393, 4.61742, 0.0081, -4.07393, 10.2405, 0.0081, -4.02178, 4.44883, 0.379296, -4.02178, 10.5564, 0.379296 )
-
-[sub_resource type="ConvexPolygonShape" id=2]
-points = PoolVector3Array( -5.33659, 0.42538, -0.161938, -5.33659, 0.42538, 0.534002, -5.33659, 2.2814, -0.161938, -5.33659, 2.2814, 0.534002, -4.94971, 0.42538, -0.161938, -4.94971, 0.42538, 0.534002, -4.94971, 2.2814, -0.161938, -4.94971, 2.2814, 0.534002, -4.11336, 1.7526, 0.0196919, -4.07393, 1.13996, 0.0081, -4.02178, 1.12157, 0.379296, -4.02178, 1.81722, 0.379296 )
-
-[sub_resource type="ConvexPolygonShape" id=3]
-points = PoolVector3Array( 4.25391, 1.12336, 0.379296, 4.25391, 9.70459, -0.0845509, 4.25391, 10.5559, 0.379296, 4.29685, 1.48218, 0.0081, 4.29685, 10.1664, 0.0081, 4.94976, 10.8655, -0.161938, 4.94976, 10.8655, 0.534002, 4.95331, 0.3076, -0.169927, 4.95331, 0.3076, 0.541991, 5.2992, 10.506, -0.137972, 5.33648, 10.8655, 0.534002, 5.34891, 0.3076, -0.169927, 5.34891, 0.3076, 0.541991 )
-
-[sub_resource type="ConvexPolygonShape" id=4]
-points = PoolVector3Array( -0.077342, 1.12146, 0.379387, -0.077342, 10.5572, 0.379387, 0.0953905, 1.49777, 0.0081, 0.0953905, 10.1809, 0.0081, 4.08107, 1.49777, 0.0081, 4.08107, 10.1809, 0.0081, 4.2538, 1.12146, 0.379387, 4.2538, 10.5572, 0.379387 )
-
-[sub_resource type="ConvexPolygonShape" id=5]
-points = PoolVector3Array( -4.02139, 1.12146, 0.379387, -4.02139, 10.5572, 0.379387, -3.8641, 1.49777, 0.0081, -3.8641, 10.1809, 0.0081, -0.234637, 1.49777, 0.0081, -0.234637, 10.1809, 0.0081, -0.0773419, 1.12146, 0.379387, -0.0773419, 10.5572, 0.379387 )
-
-[sub_resource type="ConvexPolygonShape" id=6]
-points = PoolVector3Array( 4.79526, -0.0386709, -2.86897, 4.79526, -0.0386709, 2.85433, 4.79526, 0.347978, -2.86897, 4.79526, 0.347978, 2.85433, 4.9916, 0.375413, -0.128647, 5.2992, 0.380618, 0.429002, 5.4912, -0.0386709, -2.86897, 5.4912, -0.0386709, 2.85433, 5.4912, 0.347978, -2.86897, 5.4912, 0.347978, 2.85433 )
-
-[sub_resource type="ConvexPolygonShape" id=7]
-points = PoolVector3Array( -5.4912, -0.0386709, -2.86897, -5.4912, -0.0386709, 2.85433, -5.4912, 0.347978, -2.86897, -5.4912, 0.347978, 2.85433, -4.97079, 0.400402, -0.1453, -4.79526, -0.0386709, -2.86897, -4.79526, -0.0386709, 2.85433, -4.79526, 0.347978, -2.86897, -4.79526, 0.347978, 2.85433 )
-
-[node name="Pizarron" type="RigidBody"]
-script = ExtResource( 2 )
-
-[node name="SM_Dispenser" type="MeshInstance" parent="."]
+[node name="Pizarron" instance=ExtResource( 2 )]
 mesh = ExtResource( 1 )
-material/0 = ExtResource( 3 )
+material = ExtResource( 3 )
 
-[node name="CollisionShape7" type="CollisionShape" parent="."]
-shape = SubResource( 1 )
-
-[node name="CollisionShape6" type="CollisionShape" parent="."]
-shape = SubResource( 2 )
-
-[node name="CollisionShape5" type="CollisionShape" parent="."]
-shape = SubResource( 3 )
-
-[node name="CollisionShape4" type="CollisionShape" parent="."]
-shape = SubResource( 4 )
-
-[node name="CollisionShape3" type="CollisionShape" parent="."]
-shape = SubResource( 5 )
-
-[node name="CollisionShape2" type="CollisionShape" parent="."]
-shape = SubResource( 6 )
-
-[node name="CollisionShape" type="CollisionShape" parent="."]
-shape = SubResource( 7 )
+[node name="MeshInstance" parent="." index="0"]
+material_override = ExtResource( 3 )
+mesh = ExtResource( 1 )
+material/0 = null
