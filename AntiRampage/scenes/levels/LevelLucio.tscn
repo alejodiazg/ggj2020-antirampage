@@ -1,9 +1,10 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=54 format=2]
 
 [ext_resource path="res://assets/Enviroment/SM_Level.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scenes/levels/groups/BossRoom.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/levels/groups/SalaReuniones.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/levels/groups/SalaCopiado.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/levels/groups/COmedor.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 points = PoolVector3Array( -95.489, 4.43129, 66.3507, -95.2649, 30.3362, 67.0678, -94.6752, 5.73371, 63.0319, -94.6718, 29.3871, 63.0452, -85.6879, 4.78993, 124.538, -85.6879, 30.3362, 124.538, -79.9424, 5.81538, 63.2361, -79.9424, 29.3108, 63.2361, -79.7939, 29.5484, 122.569, -79.7494, 5.5066, 122.746 )
@@ -309,3 +310,6 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -150.78
 
 [node name="SalaCopiado" parent="." instance=ExtResource( 4 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -165.148, 0, 102 )
+
+[node name="COmedor" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -141.708, 0, -251.889 )

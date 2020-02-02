@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=2]
+[gd_scene load_steps=100 format=2]
 
 [ext_resource path="res://assets/Enviroment/SM_Level.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scenes/levels/Groups/EscritoriosWorkSpace.tscn" type="PackedScene" id=2]
@@ -49,6 +49,8 @@
 [ext_resource path="res://scenes/props/env_props/Parlante.tscn" type="PackedScene" id=47]
 [ext_resource path="res://scenes/props/env_props/Dispenser.tscn" type="PackedScene" id=48]
 [ext_resource path="res://scenes/props/env_props/Cafetera.tscn" type="PackedScene" id=49]
+[ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=50]
+[ext_resource path="res://assets/MaterialPadre.material" type="Material" id=51]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 points = PoolVector3Array( -95.489, 4.43129, 66.3507, -95.2649, 30.3362, 67.0678, -94.6752, 5.73371, 63.0319, -94.6718, 29.3871, 63.0452, -85.6879, 4.78993, 124.538, -85.6879, 30.3362, 124.538, -79.9424, 5.81538, 63.2361, -79.9424, 29.3108, 63.2361, -79.7939, 29.5484, 122.569, -79.7494, 5.5066, 122.746 )
@@ -200,7 +202,7 @@ points = PoolVector3Array( -200.634, -1.59664, -300.168, -200.634, -1.59664, -29
 
 [node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
 mesh = ExtResource( 1 )
-material/0 = null
+material/0 = ExtResource( 51 )
 
 [node name="CollisionShape48" type="CollisionShape" parent="StaticBody"]
 shape = SubResource( 1 )
@@ -1156,3 +1158,6 @@ transform = Transform( 0.00916753, 0, 0.0995789, 0, 0.1, 0, -0.0995789, 0, 0.009
 
 [node name="Hojas6" parent="Sala_Reparacion" instance=ExtResource( 46 )]
 transform = Transform( -0.0757622, 0, 0.0652694, 0, 0.1, 0, -0.0652694, 0, -0.0757622, 154.022, 8.13118, 292.365 )
+
+[node name="dino" parent="." instance=ExtResource( 50 )]
+transform = Transform( -4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -167.052, 0, 252.92 )
