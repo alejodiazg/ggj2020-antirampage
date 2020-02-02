@@ -22,6 +22,7 @@ func get_name():
 func _process(_delta):
 	if holder != null:
 		self.translation = holder.get_global_transform().origin
+		global_transform = holder.get_global_transform()
 
 func picked_up(parent):
 	print("I WAS PICKED UP")

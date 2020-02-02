@@ -87,8 +87,12 @@ points = PoolVector3Array( -2.33834, 4.92338, -0.952763, -2.30013, 4.85444, -2.3
 
 [node name="SillaA" type="RigidBody"]
 script = ExtResource( 1 )
+mesh = ExtResource( 2 )
+material = ExtResource( 3 )
+generate_collision = false
 
-[node name="SM_Dispenser" type="MeshInstance" parent="."]
+[node name="MeshInstance" type="MeshInstance" parent="."]
+material_override = ExtResource( 3 )
 mesh = ExtResource( 2 )
 material/0 = ExtResource( 3 )
 
