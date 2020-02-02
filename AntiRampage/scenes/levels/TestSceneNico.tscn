@@ -163,124 +163,126 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11.6655, 0 )
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 1 )
 
-[node name="StaticBody_piso" type="StaticBody" parent="."]
+[node name="Piso" type="StaticBody" parent="."]
 
-[node name="CSGBox" type="CSGBox" parent="StaticBody_piso"]
+[node name="CSGBox" type="CSGBox" parent="Piso"]
 transform = Transform( 10, 0, 0, 0, 0.2, 0, 0, 0, 10, 0, 0, 0 )
 visible = false
 width = 21.2613
 depth = 19.4668
 material = SubResource( 2 )
 
-[node name="MeshInstance" type="MeshInstance" parent="StaticBody_piso"]
+[node name="MeshInstance" type="MeshInstance" parent="Piso"]
 mesh = ExtResource( 7 )
 material/0 = ExtResource( 8 )
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody_piso"]
+[node name="CollisionShape" type="CollisionShape" parent="Piso"]
 shape = SubResource( 3 )
 
-[node name="StaticBody_piso3" type="StaticBody" parent="."]
+[node name="Paredes" type="StaticBody" parent="."]
 
-[node name="CSGBox" type="CSGBox" parent="StaticBody_piso3"]
+[node name="CSGBox" type="CSGBox" parent="Paredes"]
 transform = Transform( 10, 0, 0, 0, 0.2, 0, 0, 0, 10, 0, 0, 0 )
 visible = false
 width = 21.2613
 depth = 19.4668
 material = SubResource( 4 )
 
-[node name="MeshInstance" type="MeshInstance" parent="StaticBody_piso3"]
+[node name="MeshInstance" type="MeshInstance" parent="Paredes"]
 mesh = ExtResource( 6 )
 material/0 = SubResource( 5 )
 
-[node name="CollisionShape31" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape31" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 6 )
 
-[node name="CollisionShape30" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape30" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 7 )
 
-[node name="CollisionShape29" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape29" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 8 )
 
-[node name="CollisionShape28" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape28" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 9 )
 
-[node name="CollisionShape27" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape27" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 10 )
 
-[node name="CollisionShape26" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape26" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 11 )
 
-[node name="CollisionShape25" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape25" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 12 )
 
-[node name="CollisionShape24" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape24" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 13 )
 
-[node name="CollisionShape23" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape23" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 14 )
 
-[node name="CollisionShape22" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape22" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 15 )
 
-[node name="CollisionShape21" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape21" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 16 )
 
-[node name="CollisionShape20" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape20" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 17 )
 
-[node name="CollisionShape19" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape19" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 18 )
 
-[node name="CollisionShape18" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape18" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 19 )
 
-[node name="CollisionShape17" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape17" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 20 )
 
-[node name="CollisionShape16" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape16" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 21 )
 
-[node name="CollisionShape15" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape15" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 22 )
 
-[node name="CollisionShape14" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape14" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 23 )
 
-[node name="CollisionShape13" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape13" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 24 )
 
-[node name="CollisionShape12" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape12" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 25 )
 
-[node name="CollisionShape11" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape11" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 26 )
 
-[node name="CollisionShape10" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape10" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 27 )
 
-[node name="CollisionShape9" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape9" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 28 )
 
-[node name="CollisionShape8" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape8" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 29 )
 
-[node name="CollisionShape7" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape7" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 30 )
 
-[node name="CollisionShape6" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape6" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 31 )
 
-[node name="CollisionShape5" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape5" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 32 )
 
-[node name="CollisionShape4" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape4" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 33 )
 
-[node name="CollisionShape3" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape3" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 34 )
 
-[node name="CollisionShape2" type="CollisionShape" parent="StaticBody_piso3"]
+[node name="CollisionShape2" type="CollisionShape" parent="Paredes"]
 shape = SubResource( 35 )
+
+[node name="dino" parent="." instance=ExtResource( 2 )]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
@@ -289,12 +291,18 @@ autoplay = true
 [node name="Cafetera" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -108.217, 8.39178, -58.2668 )
 physics_material_override = SubResource( 36 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Cafetera2" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -63.8796, 8.77527, -93.2142 )
 physics_material_override = SubResource( 37 )
 linear_damp = 3.0
 angular_damp = 3.0
+mesh = null
+material = null
+generate_collision = true
 
 [node name="EscritorioA" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -61.0193 )
@@ -302,6 +310,9 @@ mass = 753.04
 physics_material_override = SubResource( 38 )
 linear_damp = 3.0
 angular_damp = 3.0
+mesh = null
+material = null
+generate_collision = true
 
 [node name="EscritorioA3" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -1.93555 )
@@ -309,28 +320,44 @@ mass = 753.04
 physics_material_override = SubResource( 38 )
 linear_damp = 3.0
 angular_damp = 3.0
+mesh = null
+material = null
+generate_collision = true
 
 [node name="MaquinaExpendedora" parent="." instance=ExtResource( 13 )]
 transform = Transform( 0.999998, -0.00197222, 0, 0.00197222, 0.999998, 0, 0, 0, 1, 0, 0, -100.75 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="EscritorioA4" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -31.266 )
 mass = 753.04
 physics_material_override = SubResource( 38 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="EscritorioA5" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -90.9783 )
 mass = 753.04
 physics_material_override = SubResource( 38 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Dispenser" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -140.815, 0, 0 )
 physics_material_override = SubResource( 39 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="EscritorioA2" parent="." instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -68.3554, 0, -92.2861 )
-
-[node name="dino" parent="." instance=ExtResource( 2 )]
+mesh = null
+material = null
+generate_collision = true
 
 [node name="StaticBody" parent="." instance=ExtResource( 12 )]
 transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, 75.9636, 8.42007, -105.597 )
@@ -344,25 +371,43 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 101.544, 0, -92.1191 )
 
 [node name="EscritorioA6" parent="Oficina" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5931, 0.106201, -13.748 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="EscritorioA7" parent="Oficina" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5469, 0, 11.9189 )
 linear_damp = 3.0
 angular_damp = 3.0
+mesh = null
+material = null
+generate_collision = true
 
 [node name="EscritorioA8" parent="Oficina" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.546, -0.0852051, 39.7734 )
 linear_damp = 3.0
 angular_damp = 3.0
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Pizarron" parent="Oficina" instance=ExtResource( 14 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.24542, 0, -13.4941 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Carpeta" parent="Oficina" instance=ExtResource( 18 )]
 transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -13.7904, 7.79706, -12.0703 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Cactus" parent="Oficina" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7874, 7.48938, -14.3268 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Tacho" parent="Oficina" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1319, -0.0483398, -12.7782 )
@@ -377,9 +422,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4459, 7.98401, -14.8076 )
 
 [node name="Carpeta2" parent="Oficina" instance=ExtResource( 18 )]
 transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -13.7904, 7.79706, 13.5278 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Cactus2" parent="Oficina" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7874, 7.48938, 11.2714 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Tacho2" parent="Oficina" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1319, -0.0483398, 12.8199 )
@@ -392,9 +443,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4459, 7.98401, 10.7905 )
 
 [node name="Carpeta3" parent="Oficina" instance=ExtResource( 18 )]
 transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -13.7895, 7.71185, 41.3823 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Cactus3" parent="Oficina" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7864, 7.40417, 39.1259 )
+mesh = null
+material = null
+generate_collision = true
 
 [node name="Tacho3" parent="Oficina" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.13095, -0.133545, 40.6744 )
@@ -410,6 +467,10 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4449, 7.8988, 38.645 )
 
 [node name="BaseProp" parent="." instance=ExtResource( 22 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 58.2986, 0.0615797, -74.3786 )
+object_name = ""
+icon = null
 
 [node name="Plant" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 54 )
+generate_collision = true
+icon = null
