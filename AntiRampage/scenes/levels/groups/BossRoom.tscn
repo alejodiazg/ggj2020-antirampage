@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/props/env_props/EscritorioC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/props/env_props/SillaB.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://scenes/props/env_props/Tacho.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/props/env_props/PortaRetrato.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/props/env_props/Carpeta.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/props/env_props/PlantaB.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/characters/AnimaBarbi.tscn" type="PackedScene" id=8]
 
 [node name="BossRoom" type="Spatial"]
 
@@ -25,3 +27,9 @@ transform = Transform( -0.611969, 0, -0.790882, 0, 1, 0, 0.790882, 0, -0.611969,
 
 [node name="SillaB" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00582409, 0.0615797, -9.58942 )
+
+[node name="Planta" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6058, 0.0615797, -0.139515 )
+
+[node name="AnimaBarbi" parent="." instance=ExtResource( 8 )]
+transform = Transform( 100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0.555276, -4.92272 )
