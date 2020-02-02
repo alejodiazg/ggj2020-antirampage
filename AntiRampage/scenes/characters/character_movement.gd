@@ -2,7 +2,7 @@ extends KinematicBody
 
 var speed = Vector3()
 var gravity = -9.81
-var move_spd = 30
+var move_spd = 300
 var rotation_spd = 1
 var is_grabbing = false
 var is_moveable = true
@@ -11,12 +11,11 @@ var camera
 var rotating = false
 var prev_rot_z
 var prev_rot_x
-const SPEED = 20
-const ACCELERATION = 3
-const DE_ACCELERATION = 5
+const SPEED = 40
+const ACCELERATION = 10
+const DE_ACCELERATION = 3
 
 func _ready():
-	print("geeee")
 	character = get_node(".")
 	pass 
 		
