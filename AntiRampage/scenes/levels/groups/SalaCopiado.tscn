@@ -12,6 +12,7 @@
 [node name="SalaCopiado" type="Spatial"]
 
 [node name="SillaA" parent="." instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.7146, 0.0615797, -4.65616 )
 
 [node name="EscritorioB" parent="." instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.9942, 0.0615797, -23.9105 )
