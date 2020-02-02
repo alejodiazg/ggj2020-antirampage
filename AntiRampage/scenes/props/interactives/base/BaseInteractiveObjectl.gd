@@ -10,6 +10,7 @@ export(ImageTexture) var icon
 # var b = "text"
 var original_parent
 var holder
+var old_rotation
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -21,30 +22,34 @@ func get_name():
 
 func _process(_delta):
 	if holder != null:
+		var basis = Quat(holder.global_transform.basis.get_euler() + old_rotation)
+		var nuevo_transform = Transform(basis)
+		self.global_transform = nuevo_transform
 		self.translation = holder.get_global_transform().origin
-		global_transform = holder.get_global_transform()
+#		self.global_transform = holder.get_global_transform()
+#		self.rotation = holder.rotation + old_rotation
 
 func picked_up(parent):
-	print("I WAS PICKED UP")
 	self.set_mode(1)
+	old_rotation = global_transform.basis.get_euler()
+#	old_rotation = self.rotation
 	holder = parent
 	
 func disable_char_collision():
-	print("disabled the collision with the dinasour")
 	self.set_collision_mask_bit(1,false)
 	self.set_collision_layer_bit(1,false)
-	var shape: CollisionShape = get_child(1)
-	shape.disabled = true
+	for child in get_children():
+		if child is CollisionShape:
+			child.disabled = true
 
 func enable_char_collision():
-	print("enabled the collition with the dyno")
 	self.set_collision_mask_bit(1,true)
 	self.set_collision_layer_bit(1,true)
-	var shape: CollisionShape = get_child(1)
-	shape.disabled = false
+	for child in get_children():
+		if child is CollisionShape:
+			child.disabled = false
 	
 func droped():
-	print("SET DROPED FROM BASE INTERACTIVE")
 	self.set_mode(0)
 	holder = null
 # Called every frame. 'delta' is the elapsed time since the previous frame.

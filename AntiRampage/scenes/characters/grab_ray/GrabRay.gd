@@ -13,7 +13,7 @@ func _ready():
 
 func _input(event):
 	if event is InputEventMouseButton:
-		if self.enabled and Input.is_action_pressed("pick_up"):
+		if self.enabled and Input.is_action_just_pressed("pick_up"):
 			if is_colliding():
 				var body = get_collider()
 				if body is BaseInteractiveObject:
@@ -22,7 +22,7 @@ func _input(event):
 						grabbed = body
 						body.picked_up(self)
 						self.enabled = false
-		elif grabbed != null:
+		if grabbed != null and Input.is_action_just_released("pick_up"):
 			grabbed.droped()
 			grabbed.enable_char_collision()
 			grabbed = null
