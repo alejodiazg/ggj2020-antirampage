@@ -34,7 +34,7 @@ func picked_up(parent):
 	old_rotation = global_transform.basis.get_euler()
 #	old_rotation = self.rotation
 	holder = parent
-	
+
 func disable_char_collision():
 	self.set_collision_mask_bit(1,false)
 	self.set_collision_layer_bit(1,false)
@@ -48,7 +48,7 @@ func enable_char_collision():
 	for child in get_children():
 		if child is CollisionShape:
 			child.disabled = false
-	
+
 func droped():
 	self.set_mode(0)
 	holder = null
