@@ -1,8 +1,10 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=56 format=2]
 
+[ext_resource path="res://scenes/UI/menu/PNG/bebida.png" type="Texture" id=1]
 [ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/props/env_props/Cafetera.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/props/env_props/Dispenser.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Sounds/techrex.ogg" type="AudioStream" id=5]
 [ext_resource path="res://assets/Paredes.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://assets/PisoEntero.obj" type="ArrayMesh" id=7]
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=8]
@@ -226,6 +228,10 @@ shape = SubResource( 30 )
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody_piso3"]
 shape = SubResource( 31 )
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+
 [node name="Cafetera" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -108.217, 8.39178, -58.2668 )
 physics_material_override = null
@@ -336,7 +342,8 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4449, 7.8988, 38.645 )
 [node name="PuertaA" parent="Oficina" instance=ExtResource( 21 )]
 transform = Transform( -0.00539317, 0, -0.999985, 0, 1, 0, 0.999985, 0, -0.00539317, -41.9231, 0.0615797, 57.8759 )
 
-[node name="RigidBody" parent="." instance=ExtResource( 9 )]
+[node name="Fixer1" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.56873, 35.8801 )
 physics_material_override = null
 object_name = "SimplePlant"
+icon = ExtResource( 1 )

@@ -1,0 +1,138 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scenes/UI/menu/Font ui/GAME ROBOT-Light.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://scenes/UI/menu/PNG/FlyerGomezRex.png" type="Texture" id=2]
+[ext_resource path="res://scenes/UI/menu/PNG/background.png" type="Texture" id=3]
+[ext_resource path="res://scenes/UI/menu/PNG/buttonLarge.png" type="Texture" id=4]
+[ext_resource path="res://scenes/UI/menu/PlayButton.gd" type="Script" id=5]
+[ext_resource path="res://assets/sounds/menusaurus.ogg" type="AudioStream" id=6]
+
+[sub_resource type="AnimatedTexture" id=1]
+fps = 11.3
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Intro"
+length = 11.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flyer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 11 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 467.638, 717.61 ), Vector2( 467.638, 290.357 ) ]
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("Flyer:scale:x")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0.5, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 11 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("Flyer:scale:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 0.5, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 11 )
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../Control/VBoxContainer/PlayButton:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 10.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[node name="Node" type="Node"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -105.552
+margin_top = 170.419
+margin_right = 94.4482
+margin_bottom = 240.419
+rect_scale = Vector2( 1.44649, 1.44649 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="TextureButton" parent="Control/VBoxContainer"]
+visible = false
+margin_right = 200.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 200, 70 )
+texture_normal = ExtResource( 4 )
+texture_hover = SubResource( 1 )
+expand = true
+script = ExtResource( 5 )
+animation_player_path = NodePath("../../../Logo/AnimationPlayer")
+
+[node name="Label" type="Label" parent="Control/VBoxContainer/PlayButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -61.0
+margin_top = -21.5
+margin_right = 61.0
+margin_bottom = 21.5
+custom_fonts/font = SubResource( 2 )
+text = "Jugar"
+
+[node name="Logo" type="Node2D" parent="."]
+
+[node name="Flyer" type="Sprite" parent="Logo"]
+position = Vector2( 467.638, 717.61 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Logo"]
+autoplay = "Intro"
+anims/Intro = SubResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
+[connection signal="pressed" from="Control/VBoxContainer/PlayButton" to="Control" method="_on_PlayButton_pressed"]
