@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=52 format=2]
 
 [ext_resource path="res://scenes/gameManager/gameManager.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=2]
@@ -12,11 +12,20 @@
 [ext_resource path="res://scenes/props/env_props/EscritorioA.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/props/env_props/EscritorioC.tscn" type="PackedScene" id=11]
 [ext_resource path="res://scenes/props/objectives/base/BaseObjective.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/props/env_props/MaquinaExpendedora.tscn" type="PackedScene" id=13]
 
 [sub_resource type="Environment" id=1]
+background_mode = 1
 ambient_light_color = Color( 1, 1, 1, 1 )
-ambient_light_energy = 2.68
+ambient_light_energy = 0.89
 fog_color = Color( 0, 0, 0, 1 )
+dof_blur_far_distance = 240.0
+dof_blur_far_transition = 56.26
+dof_blur_far_amount = 0.13
+glow_intensity = 1.27
+adjustment_brightness = 1.62
+adjustment_contrast = 4.68
+adjustment_saturation = 3.91
 
 [sub_resource type="SpatialMaterial" id=2]
 albedo_color = Color( 0.223529, 0.152941, 0.152941, 1 )
@@ -274,6 +283,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -1.93555 )
 mass = 753.04
 physics_material_override = SubResource( 37 )
 
+[node name="MaquinaExpendedora" parent="." instance=ExtResource( 13 )]
+transform = Transform( 0.999998, -0.00197222, 0, 0.00197222, 0.999998, 0, 0, 0, 1, 0, 0, -100.75 )
+
 [node name="EscritorioA4" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -31.266 )
 mass = 753.04
@@ -286,6 +298,7 @@ physics_material_override = SubResource( 37 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.00272269, -0.999996, 0, 0.999996, 0.00272269, 0, 151.915, -43.862 )
+visible = false
 light_color = Color( 0.992157, 1, 0.733333, 1 )
 light_energy = 3.14
 light_indirect_energy = 7.43
@@ -300,7 +313,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -68.3554, 0, -92.2861 )
 [node name="dino" parent="." instance=ExtResource( 2 )]
 
 [node name="BaseProp" parent="." instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21.9473 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 40.4514 )
 
 [node name="StaticBody" parent="." instance=ExtResource( 12 )]
 transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, -27.0723, 4.29971, 41.4892 )

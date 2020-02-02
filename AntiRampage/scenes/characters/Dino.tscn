@@ -61,6 +61,7 @@ height = 140.0
 
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 1, 0, 0, 0, -0.210028, 0.977695, 0, -0.977695, -0.210028, 0.222485, 50.7976, -2.68841 )
+visible = false
 light_energy = 5.19
 light_indirect_energy = 1.99
 spot_range = 39.2699

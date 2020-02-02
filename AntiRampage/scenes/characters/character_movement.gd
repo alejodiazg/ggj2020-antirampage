@@ -13,7 +13,7 @@ var prev_rot_z
 var prev_rot_x
 const SPEED = 40
 const ACCELERATION = 10
-const DE_ACCELERATION = 3
+const DE_ACCELERATION = 10
 
 func _ready():
 	character = get_node(".")
