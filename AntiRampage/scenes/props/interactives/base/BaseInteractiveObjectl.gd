@@ -16,6 +16,9 @@ func _ready():
 	original_parent = get_parent()
 	pass # Replace with function body.
 
+func get_name():
+	return object_name
+
 func _process(_delta):
 	if holder != null:
 		self.translation = holder.get_global_transform().origin
