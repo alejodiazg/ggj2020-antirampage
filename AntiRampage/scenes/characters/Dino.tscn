@@ -48,6 +48,10 @@ points = PoolVector3Array( -0.0295815, 0.15333, 0.0939271, -0.0294896, 0.155449,
 transform = Transform( 100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0 )
 script = ExtResource( 1 )
 
+[node name="GrabRay" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 0.939693, -0.34202, 0, 0.34202, 0.939693, 0, 0.0579536, 0.0620017 )
+cast_to = Vector3( 0, 0, 0.1 )
+
 [node name="target" type="Spatial" parent="."]
 
 [node name="Camera" type="Camera" parent="target"]
@@ -122,9 +126,5 @@ shape = SubResource( 12 )
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0352387 )
 shape = SubResource( 13 )
-
-[node name="GrabRay" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 0.939693, -0.34202, 0, 0.34202, 0.939693, 0, 0.0579536, 0.0620017 )
-cast_to = Vector3( 0, 0, 0.1 )
 
 [editable path="Animadino"]
