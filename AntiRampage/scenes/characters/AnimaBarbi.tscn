@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/MaterialPadre.material" type="Material" id=1]
+[ext_resource path="res://Animated/AnimaBarbi.dae" type="PackedScene" id=2]
+
+[node name="AnimaBarbi" instance=ExtResource( 2 )]
+
+[node name="Barbi_ncl1_1" parent="Barbi/QuickRigCharacter_Reference" index="0"]
+material/0 = ExtResource( 1 )
+
+[node name="QuickRigCharacter_Ctrl_LeftWristEffector" parent="Barbi/QuickRigCharacter_Ctrl_Reference" index="3"]
+transform = Transform( 0.176411, 0.770257, -0.612849, -0.416537, 0.622536, 0.66253, 0.891838, 0.138397, 0.430663, 0.026977, 0.0789037, 0.0440248 )
+
+[node name="QuickRigCharacter_Ctrl_RightWristEffector" parent="Barbi/QuickRigCharacter_Ctrl_Reference" index="4"]
+transform = Transform( -0.0558051, -0.64531, 0.76188, -0.129443, 0.761305, 0.635342, -0.990015, -0.0631647, -0.126016, -0.026977, 0.0915946, 0.0440248 )
+
+[node name="QuickRigCharacter_Ctrl_LeftElbowEffector" parent="Barbi/QuickRigCharacter_Ctrl_Reference" index="7"]
+transform = Transform( 0.176413, 0.770256, -0.612849, -0.416538, 0.622536, 0.662529, 0.891838, 0.138396, 0.430664, 0.0238656, 0.0862503, 0.0282952 )
+
+[node name="QuickRigCharacter_Ctrl_RightElbowEffector" parent="Barbi/QuickRigCharacter_Ctrl_Reference" index="8"]
+transform = Transform( -0.055806, -0.645312, 0.761878, -0.129444, 0.761304, 0.635343, -0.990015, -0.0631646, -0.126017, -0.0279613, 0.0893115, 0.0265637 )
+
+[node name="QuickRigCharacter_Ctrl_LeftShoulderEffector" parent="Barbi/QuickRigCharacter_Ctrl_Reference" index="13"]
+transform = Transform( 0.545715, 0.770249, -0.330017, -0.755687, 0.622547, 0.203403, 0.362122, 0.13839, 0.9218, 0.0125909, 0.101863, 0.0208137 )
+
+[node name="QuickRigCharacter_Ctrl_RightShoulderEffector" parent="Barbi/QuickRigCharacter_Ctrl_Reference" index="14"]
+transform = Transform( 0.743958, -0.645299, 0.173536, 0.607495, 0.761314, 0.226607, -0.278345, -0.0631639, 0.958402, -0.0125909, 0.101863, 0.0208137 )
+
+[node name="QuickRigCharacter_Ctrl_LeftArm" parent="Barbi/QuickRigCharacter_Ctrl_Reference/QuickRigCharacter_Ctrl_Hips/QuickRigCharacter_Ctrl_Spine/QuickRigCharacter_Ctrl_Spine1/QuickRigCharacter_Ctrl_Spine2/QuickRigCharacter_Ctrl_LeftShoulder" index="0"]
+transform = Transform( 0.545715, 0.770249, -0.330017, -0.755687, 0.622547, 0.203403, 0.362122, 0.13839, 0.9218, 0.00755455, 0, 0 )
+
+[node name="QuickRigCharacter_Ctrl_LeftForeArm" parent="Barbi/QuickRigCharacter_Ctrl_Reference/QuickRigCharacter_Ctrl_Hips/QuickRigCharacter_Ctrl_Spine/QuickRigCharacter_Ctrl_Spine1/QuickRigCharacter_Ctrl_Spine2/QuickRigCharacter_Ctrl_LeftShoulder/QuickRigCharacter_Ctrl_LeftArm" index="0"]
+transform = Transform( 0.733997, 1.4033e-05, -0.679152, -1.1e-05, 1, 8.77413e-06, 0.679152, 1.03049e-06, 0.733997, 0.0206604, 1e-08, 0 )
+
+[node name="QuickRigCharacter_Ctrl_LeftHand" parent="Barbi/QuickRigCharacter_Ctrl_Reference/QuickRigCharacter_Ctrl_Hips/QuickRigCharacter_Ctrl_Spine/QuickRigCharacter_Ctrl_Spine1/QuickRigCharacter_Ctrl_Spine2/QuickRigCharacter_Ctrl_LeftShoulder/QuickRigCharacter_Ctrl_LeftArm/QuickRigCharacter_Ctrl_LeftForeArm" index="0"]
+transform = Transform( 1, 1e-06, -1e-06, -1e-06, 1, 1e-12, 1e-06, 0, 1, 0.0176372, 0, 0 )
+
+[node name="QuickRigCharacter_Ctrl_RightArm" parent="Barbi/QuickRigCharacter_Ctrl_Reference/QuickRigCharacter_Ctrl_Hips/QuickRigCharacter_Ctrl_Spine/QuickRigCharacter_Ctrl_Spine1/QuickRigCharacter_Ctrl_Spine2/QuickRigCharacter_Ctrl_RightShoulder" index="0"]
+transform = Transform( 0.743958, -0.645299, 0.173536, 0.607495, 0.761314, 0.226607, -0.278345, -0.0631639, 0.958402, -0.00755455, 0, 0 )
+
+[node name="QuickRigCharacter_Ctrl_RightForeArm" parent="Barbi/QuickRigCharacter_Ctrl_Reference/QuickRigCharacter_Ctrl_Hips/QuickRigCharacter_Ctrl_Spine/QuickRigCharacter_Ctrl_Spine1/QuickRigCharacter_Ctrl_Spine2/QuickRigCharacter_Ctrl_RightShoulder/QuickRigCharacter_Ctrl_RightArm" index="0"]
+transform = Transform( 0.155412, -1.50945e-05, 0.98785, -2e-06, 1, 1.55948e-05, -0.98785, -4.39932e-06, 0.155412, -0.0206604, 0, 0 )
+
+[node name="QuickRigCharacter_Ctrl_RightHand" parent="Barbi/QuickRigCharacter_Ctrl_Reference/QuickRigCharacter_Ctrl_Hips/QuickRigCharacter_Ctrl_Spine/QuickRigCharacter_Ctrl_Spine1/QuickRigCharacter_Ctrl_Spine2/QuickRigCharacter_Ctrl_RightShoulder/QuickRigCharacter_Ctrl_RightArm/QuickRigCharacter_Ctrl_RightForeArm" index="0"]
+transform = Transform( 1, -4e-12, -2e-06, 0, 1, -2e-06, 2e-06, 2e-06, 1, -0.0176372, 0, 0 )
