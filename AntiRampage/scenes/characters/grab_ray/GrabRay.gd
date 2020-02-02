@@ -12,8 +12,8 @@ func _ready():
 	pass # Replace with function body.
 
 func _input(event):
-	if event is InputEventKey and event.scancode == KEY_E and not event.echo:
-		if self.enabled:
+	if event is InputEventMouseButton:
+		if self.enabled and Input.is_action_just_pressed("pick_up"):
 			if is_colliding():
 				var body = get_collider()
 				if body is BaseInteractiveObject:
@@ -22,14 +22,14 @@ func _input(event):
 						grabbed = body
 						body.picked_up(self)
 						self.enabled = false
-		else:
+		if grabbed != null and Input.is_action_just_released("pick_up"):
 			grabbed.droped()
 			grabbed.enable_char_collision()
 			grabbed = null
 			self.enabled = true
-			
-						
-			
+
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _physics_process(delta):
 #	if is_colliding():

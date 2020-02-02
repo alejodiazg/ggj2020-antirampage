@@ -1,40 +1,14 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/Props_Finales/SM_EscritorioA.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://scenes/props/base/BaseProp.gd" type="Script" id=2]
+[ext_resource path="res://scenes/props/base/BaseProp.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=3]
 
-[sub_resource type="PhysicsMaterial" id=5]
-
-[sub_resource type="ConvexPolygonShape" id=1]
-points = PoolVector3Array( 6.73005, 6.61476, 5.6554, 6.76206, 4.44089e-16, 5.61969, 6.88598, 0.152487, 0.582272, 6.88715, 6.42144, 0.583214, 7.0387, 0.0947543, -0.0545017, 7.0387, 6.48061, -0.0545017, 7.43672, 1.09164, -0.256323, 7.43672, 6.08293, -0.256323, 11.4343, 1.08794, -0.2612, 11.4343, 6.08764, -0.2612, 11.8403, 0.0796054, -0.0672842, 11.8403, 6.49576, -0.0672842, 11.8725, 0.0366555, 5.58647, 11.8725, 6.53871, 5.58647, 11.9933, 0.138177, 0.178866, 11.9933, 0.138177, 5.29716, 11.9933, 6.43719, 0.178866, 11.9933, 6.43719, 5.29716 )
-
-[sub_resource type="ConvexPolygonShape" id=2]
-points = PoolVector3Array( -7.94439, 6.9821, 4.60758, -7.94439, 6.9821, 5.76231, -7.32274, -0.10539, 4.65468, -7.32274, -0.10539, 5.71522, 6.67642, -0.10539, 4.65468, 6.67642, -0.10539, 5.71522, 6.8933, 6.78589, 4.63825, 7.29807, 6.9821, 5.76231 )
-
-[sub_resource type="ConvexPolygonShape" id=3]
-points = PoolVector3Array( -8.2286, 6.85514, -1.17672, -8.21869, 6.62437, 4.8344, -7.32274, 6.89367, 6.13944, -7.32274, 7.95382, -0.647079, -7.32274, 7.95382, 5.92637, -7.1327, 6.69367, 5.6554, 6.88537, 6.68154, -0.223008, 11.7994, 6.69367, 5.6554, 11.9607, 6.69683, 0.0530697, 11.9933, 6.69465, 5.44332, 12.4027, 7.95382, -0.647079, 12.4027, 7.95382, 5.92637, 12.6155, 6.89367, -0.858773, 12.6155, 6.89367, 6.13944 )
-
-[sub_resource type="ConvexPolygonShape" id=4]
-points = PoolVector3Array( -12.6245, 6.8929, -6.16285, -12.6245, 6.8929, 6.13944, -12.5194, 7.59046, -5.91897, -12.5194, 7.59046, 5.89555, -12.2875, 7.74715, -5.64483, -12.2875, 7.74715, 5.62141, -12.0227, 0.216542, -5.08443, -12.0227, 0.216542, 5.06101, -11.9328, 0.00570149, 5.55556, -11.9118, 0.0477754, -5.5192, -8.26398, 0.100924, -5.44368, -7.87658, 7.72022, -5.60514, -7.7124, 7.46428, -5.71567, -7.53512, 6.8929, -6.16285, -7.49678, 7.68963, -0.605815, -7.4576, 7.7492, 5.62443, -7.3926, -8.88178e-16, 5.56366, -7.39173, 7.64262, 5.97959, -7.32285, -0.106054, 4.65464, -7.32285, 6.8929, -0.859478 )
-
-[node name="EscritorioA" type="RigidBody"]
-mass = 107.79
-physics_material_override = SubResource( 5 )
-script = ExtResource( 2 )
-
-[node name="SM_Dispenser" type="MeshInstance" parent="."]
+[node name="EscritorioA" instance=ExtResource( 2 )]
 mesh = ExtResource( 1 )
-material/0 = ExtResource( 3 )
+material = ExtResource( 3 )
 
-[node name="CollisionShape4" type="CollisionShape" parent="."]
-shape = SubResource( 1 )
-
-[node name="CollisionShape3" type="CollisionShape" parent="."]
-shape = SubResource( 2 )
-
-[node name="CollisionShape2" type="CollisionShape" parent="."]
-shape = SubResource( 3 )
-
-[node name="CollisionShape" type="CollisionShape" parent="."]
-shape = SubResource( 4 )
+[node name="MeshInstance" parent="." index="0"]
+material_override = ExtResource( 3 )
+mesh = ExtResource( 1 )
+material/0 = null

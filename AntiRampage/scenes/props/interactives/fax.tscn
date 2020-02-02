@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/props/interactives/base/BaseInteractiveObjectl.gd" type="Script" id=1]
+[ext_resource path="res://scenes/props/base/BaseProp.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/Props_Finales/AtlasColor_B.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/Props_Finales/SM_Fax.obj" type="ArrayMesh" id=4]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="ConvexPolygonShape" id=2]
+points = PoolVector3Array( -5.19439, -0.0117364, -4.3721, -5.19439, 8.59083, -4.3721, -5.10793, 0.0639146, 4.0007, -5.0941, 6.92084, 3.83086, -5.09345, 6.12393, 3.98939, -5.07728, 8.49935, 2.23147, -5.051, 8.16302, 2.85157, -4.6481, 8.21992, 3.5376, -4.6481, 8.70062, 2.73595, -4.6481, 8.86144, -3.99591, -4.63644, 0.376533, 4.3284, -4.63123, 8.84573, 2.24647, -4.62724, 7.5656, 4.0001, -4.62269, 7.24274, 4.15547, -4.62107, 6.44498, 4.31409, -3.50561, 6.44579, 4.31393, -2.4477, 9.1031, -3.57893, 2.53412, 8.9698, -3.31509, 2.53412, 8.9698, -2.04794, 3.47197, 8.00648, 3.97957, 3.47197, 8.50239, 3.48302, 4.62107, 6.44498, 4.31409, 4.62269, 7.24274, 4.15547, 4.63123, 8.84573, 2.24647, 4.63644, 0.376533, 4.3284, 4.65848, 8.22815, 3.54548, 4.65957, 8.7109, 2.74267, 4.67906, 8.89027, -4.0226, 5.051, 8.16302, 2.85157, 5.07728, 8.49935, 2.23147, 5.09345, 6.12393, 3.98939, 5.0941, 6.92084, 3.83086, 5.10793, 0.0639146, 4.0007, 5.19439, -0.0117364, -4.3721, 5.19439, 8.59083, -4.3721 )
+
+[node name="BaseProp" instance=ExtResource( 2 )]
+transform = Transform( 0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.00582409, 0.0615797, 0.0894585 )
+collision_layer = 7
+collision_mask = 7
+linear_damp = 100.0
+angular_damp = 100.0
+script = ExtResource( 1 )
+mesh = ExtResource( 4 )
+material = SubResource( 1 )
+generate_collision = false
+
+[node name="MeshInstance" parent="." index="0"]
+transform = Transform( 2, 0, 0, 0, -3.25841e-07, -2, 0, 2, -3.25841e-07, 0, 3.15645, 5.1409e-07 )
+material_override = SubResource( 1 )
+mesh = ExtResource( 4 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="." index="1"]
+transform = Transform( 2, 0, 0, 0, -3.25841e-07, -2, 0, 2, -3.25841e-07, 0, 3.15645, 5.1409e-07 )
+shape = SubResource( 2 )
