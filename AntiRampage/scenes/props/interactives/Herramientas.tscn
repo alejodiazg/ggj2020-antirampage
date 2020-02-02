@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/props/interactives/base/BaseInteractiveObjectl.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Props_Finales/SM_PlantaA.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/MaterialMadre.material" type="Material" id=3]
+
+[sub_resource type="PhysicsMaterial" id=1]
+
+[node name="Plant" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+physics_material_override = SubResource( 1 )
+mesh = ExtResource( 2 )
+material = ExtResource( 3 )
+object_name = "Herramientas"
+
+[node name="MeshInstance" parent="." index="0"]
+material_override = ExtResource( 3 )
+mesh = ExtResource( 2 )
+material/0 = null

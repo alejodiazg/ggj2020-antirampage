@@ -19,12 +19,13 @@ func get_name():
 
 func _process(_delta):
 	if holder != null:
-		var basis = Quat(holder.global_transform.basis.get_euler() + old_rotation)
-		var nuevo_transform = Transform(basis)
-		self.global_transform = nuevo_transform
+#		var basis = Quat(holder.get_global_transform().basis.get_euler() + old_rotation)
+#		var nuevo_transform = Transform(basis)
+#		self.global_transform = nuevo_transform
 		self.translation = holder.get_global_transform().origin
 #		self.global_transform = holder.get_global_transform()
-#		self.rotation = holder.rotation + old_rotation
+#		self.rotation = holder.get_global_transform().basis.get_euler() + old_rotation
+		self.rotation = old_rotation + holder.get_global_transform().basis.get_euler()
 
 func picked_up(parent):
 	self.set_mode(1)

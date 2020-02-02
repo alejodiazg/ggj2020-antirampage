@@ -24,6 +24,10 @@ config/name="AntiRampage"
 run/main_scene="res://scenes/levels/TestSceneNico.tscn"
 config/icon="res://icon.png"
 
+
+[autoload]
+gameManager="*res://scenes/gameManager/gameManager.gd"
+
 [input]
 
 ui_left={
