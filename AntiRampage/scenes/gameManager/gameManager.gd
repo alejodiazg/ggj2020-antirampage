@@ -3,18 +3,33 @@ extends Node
 var time_left = 60
 var points = 0
 var timer
+var character
+var playButton
+var MainMenu
+var Logo
+var GUI
 onready var number_label 
 onready var points_label 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	number_label = get_node("GUI/TimerLabel")
-	points_label = get_node("GUI/PointsLabel")
+	var root = get_tree().get_current_scene()
+	GUI = root.get_node("GUI")
+	number_label = GUI.get_node("TimerLabel")
+	points_label = GUI.get_node("PointsLabel")
+	MainMenu = root.get_node("MainMenu/Control")
+	Logo = root.get_node("MainMenu/Logo")
+	playButton = root.get_node("MainMenu/Control/VBoxContainer/PlayButton")
+	character = root.get_node("level/dino")
+	
+	
 	timer = Timer.new()
 	timer.set_wait_time(time_left)
 	timer.connect("timeout",self,"_on_timer_timeout") 
 	
+	playButton.connect("pressed",self,"game_start")
+	character.is_moveable = false
 	add_child(timer) #to process
-	timer.start() #to start
+	#timer.start() #to start
 
 
 
@@ -29,5 +44,16 @@ func add_points(new_points):
 	points += new_points
 
 func _on_timer_timeout():
+	timer.stop()
+	character.is_moveable = false
+	GUI.hide()
+	#game_over_screen()
 	print("se termino el tiempo BRO")
    #your_timer_stuff()
+func game_start():
+	character.is_moveable = true
+	GUI.show()
+	MainMenu.hide()
+	Logo.hide()
+	timer.start()
+	
