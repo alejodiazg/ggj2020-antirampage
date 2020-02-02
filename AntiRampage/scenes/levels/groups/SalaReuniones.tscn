@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/props/env_props/Mesa_Reuniones.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/props/env_props/Carpeta.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/props/env_props/SillaA.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/props/env_props/Pizarron.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/props/env_props/CarpetaC.tscn" type="PackedScene" id=5]
+
+[node name="SalaReuniones" type="Spatial"]
+
+[node name="Mesa_Reuniones" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00582409, 0.0615797, 0.0894585 )
+
+[node name="Carpeta" parent="." instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -0.00582409, 7.04629, 0.0894585 )
+
+[node name="CarpetaB" parent="." instance=ExtResource( 5 )]
+transform = Transform( -4.37114e-09, -0.1, 0, 0.1, -4.37114e-09, 0, 0, 0, 0.1, -9.00582, 7.06158, -3.91054 )
+
+[node name="SillaA" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, -13.0058, 0.0615797, -12.9105 )
+
+[node name="SillaA2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00582, 0.0615797, -12.9105 )
+
+[node name="SillaA3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 14.8374, 0.0615797, -12.9105 )
+
+[node name="SillaA4" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 14.8374, 0.0615797, 11.9489 )
+
+[node name="SillaA5" parent="." instance=ExtResource( 3 )]
+transform = Transform( -1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, -1, 1.54837, -1.05142, 13.2677 )
+
+[node name="SillaA6" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, -0.965926, -13.4516, -1.05142, 10.2677 )
+
+[node name="Pizarron" parent="." instance=ExtResource( 4 )]
+transform = Transform( -6.55671e-08, 0, -1, 0, 1.5, 0, 1.5, 0, -4.37114e-08, 30.9942, 0.0615797, 0.0894585 )

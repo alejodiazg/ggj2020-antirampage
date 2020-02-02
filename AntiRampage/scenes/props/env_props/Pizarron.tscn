@@ -5,6 +5,7 @@
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=3]
 
 [node name="Pizarron" instance=ExtResource( 2 )]
+transform = Transform( 1.5, 0, 0, 0, 1.5, 0, 0, 0, 1, -0.00582409, 0.0615797, 0.0894585 )
 mesh = ExtResource( 1 )
 material = ExtResource( 3 )
 
