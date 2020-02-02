@@ -1,8 +1,46 @@
-[gd_scene load_steps=52 format=2]
+[gd_scene load_steps=90 format=2]
 
 [ext_resource path="res://assets/Enviroment/SM_Level.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scenes/levels/Groups/EscritoriosWorkSpace.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/props/env_props/AireAC.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/props/env_props/BancoA.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/props/env_props/BancoB.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/props/env_props/Fichero_Escritorio.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/props/env_props/CuadroC.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/props/env_props/Cuadro.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/props/env_props/CuadroB.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/props/env_props/Calculadora.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/props/env_props/CarpetaD.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/props/env_props/Anotador.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/props/env_props/Carpeta.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/levels/Groups/EscritoriosWorkSpaceB.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/props/env_props/CarpetaB.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/props/env_props/CarpetaC.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/props/env_props/Sillon.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/props/env_props/MesadaB.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/props/env_props/PuertaB.tscn" type="PackedScene" id=19]
+[ext_resource path="res://scenes/levels/Groups/SalaReuniones.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/props/env_props/Taza.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/props/env_props/MuebleC.tscn" type="PackedScene" id=22]
+[ext_resource path="res://scenes/props/env_props/Impresora.tscn" type="PackedScene" id=23]
+[ext_resource path="res://scenes/props/env_props/Lampara.tscn" type="PackedScene" id=24]
+[ext_resource path="res://scenes/props/env_props/TazaB.tscn" type="PackedScene" id=25]
+[ext_resource path="res://scenes/props/env_props/MuebleB.tscn" type="PackedScene" id=26]
+[ext_resource path="res://scenes/props/env_props/VentanaA.tscn" type="PackedScene" id=27]
+[ext_resource path="res://scenes/props/env_props/MesadaA.tscn" type="PackedScene" id=28]
+[ext_resource path="res://scenes/levels/Groups/SalaCopiado.tscn" type="PackedScene" id=29]
+[ext_resource path="res://scenes/props/env_props/PlantaA.tscn" type="PackedScene" id=30]
+[ext_resource path="res://scenes/props/env_props/Lampara_Escritorio.tscn" type="PackedScene" id=31]
+[ext_resource path="res://scenes/props/env_props/PlantaB.tscn" type="PackedScene" id=32]
+[ext_resource path="res://scenes/props/env_props/VentanaC.tscn" type="PackedScene" id=33]
+[ext_resource path="res://scenes/props/env_props/Libreria.tscn" type="PackedScene" id=34]
+[ext_resource path="res://scenes/props/env_props/Tacho.tscn" type="PackedScene" id=35]
+[ext_resource path="res://scenes/props/env_props/PlantaC.tscn" type="PackedScene" id=36]
+[ext_resource path="res://scenes/props/env_props/Fotocopiadora.tscn" type="PackedScene" id=37]
+[ext_resource path="res://scenes/props/env_props/VentanaB.tscn" type="PackedScene" id=38]
+[ext_resource path="res://scenes/props/env_props/Reloj.tscn" type="PackedScene" id=39]
+[ext_resource path="res://scenes/props/env_props/Fax.tscn" type="PackedScene" id=40]
+[ext_resource path="res://scenes/props/env_props/Telefono.tscn" type="PackedScene" id=41]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 points = PoolVector3Array( -95.489, 4.43129, 66.3507, -95.2649, 30.3362, 67.0678, -94.6752, 5.73371, 63.0319, -94.6718, 29.3871, 63.0452, -85.6879, 4.78993, 124.538, -85.6879, 30.3362, 124.538, -79.9424, 5.81538, 63.2361, -79.9424, 29.3108, 63.2361, -79.7939, 29.5484, 122.569, -79.7494, 5.5066, 122.746 )
@@ -308,14 +346,8 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.273
 [node name="EscritoriosEmpleados2" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117, 0, 143.855 )
 
-[node name="EscritoriosEmpleados4" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 70.5055, -0.115746, 143.846 )
-
 [node name="EscritoriosEmpleados3" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191, -0.115746, 143.846 )
-
-[node name="EscritoriosEmpleados8" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.2733, 0, 108.447 )
 
 [node name="EscritoriosEmpleados7" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117, 0, 108.447 )
@@ -323,17 +355,11 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117
 [node name="EscritoriosEmpleados6" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 70.5055, -0.115746, 108.438 )
 
-[node name="EscritoriosEmpleados5" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191, -0.115746, 108.438 )
-
 [node name="EscritoriosEmpleados16" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.2733, 0, 67.4375 )
 
 [node name="EscritoriosEmpleados15" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117, 0, 67.4375 )
-
-[node name="EscritoriosEmpleados14" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 70.5055, -0.115746, 67.4289 )
 
 [node name="EscritoriosEmpleados13" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191, -0.115746, 67.4289 )
@@ -344,14 +370,8 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.273
 [node name="EscritoriosEmpleados11" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117, 0, 32.0294 )
 
-[node name="EscritoriosEmpleados10" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 70.5055, -0.115746, 32.0209 )
-
 [node name="EscritoriosEmpleados9" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191, -0.115746, 32.0209 )
-
-[node name="EscritoriosEmpleados32" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.2733, 0, -2.34325 )
 
 [node name="EscritoriosEmpleados31" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117, 0, -2.34325 )
@@ -359,17 +379,11 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117
 [node name="EscritoriosEmpleados30" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 70.5055, -0.115746, -2.35181 )
 
-[node name="EscritoriosEmpleados29" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191, -0.115746, -2.35181 )
-
 [node name="EscritoriosEmpleados28" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.2733, 0, -37.7513 )
 
 [node name="EscritoriosEmpleados27" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117, 0, -37.7513 )
-
-[node name="EscritoriosEmpleados26" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 70.5055, -0.115746, -37.7599 )
 
 [node name="EscritoriosEmpleados25" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191, -0.115746, -37.7599 )
@@ -377,26 +391,50 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191
 [node name="EscritoriosEmpleados24" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.2733, 0, -78.7605 )
 
-[node name="EscritoriosEmpleados23" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117, 0, -78.7605 )
-
-[node name="EscritoriosEmpleados22" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 70.5055, -0.115746, -78.7691 )
-
-[node name="EscritoriosEmpleados21" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191, -0.115746, -78.7691 )
-
 [node name="EscritoriosEmpleados20" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -22.2733, 0, -114.169 )
 
 [node name="EscritoriosEmpleados19" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.4117, 0, -114.169 )
 
-[node name="EscritoriosEmpleados18" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
-transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 70.5055, -0.115746, -114.177 )
-
 [node name="EscritoriosEmpleados17" parent="Escritorios_Empleados" instance=ExtResource( 2 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 116.191, -0.115746, -114.177 )
+
+[node name="Spatial" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 69.0556, 0, 140.813 )
+
+[node name="Spatial2" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 119.845, 0, 105.292 )
+
+[node name="Spatial3" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.982, 0, 105.292 )
+
+[node name="Spatial4" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.982, 0, -4.63879 )
+
+[node name="Spatial5" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.0012, 0, -79.1924 )
+
+[node name="Spatial6" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.0497, 0, -79.1924 )
+
+[node name="Spatial7" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.0497, 0, -38.5724 )
+
+[node name="Spatial8" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.0497, 0, 31.5758 )
+
+[node name="Spatial9" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.0497, 0, 66.9955 )
+
+[node name="Spatial10" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.0497, 0, -115.813 )
+
+[node name="Spatial11" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 115.237, 0, -77.0984 )
+
+[node name="Spatial12" parent="Escritorios_Empleados" instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 115.237, 0, -2.45037 )
 
 [node name="AiresAcondicionados" type="Node" parent="."]
 
@@ -420,3 +458,514 @@ transform = Transform( 1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -194.817,
 
 [node name="AireAC7" parent="AiresAcondicionados" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 0.567057, 24.5226, -294.892 )
+
+[node name="BancosySillones" type="Node" parent="."]
+
+[node name="BancoA6" parent="BancosySillones" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -134.729, 0.0615797, -122.711 )
+
+[node name="BancoA5" parent="BancosySillones" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -146.625, 0.0615797, -122.711 )
+
+[node name="BancoA4" parent="BancosySillones" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -159.653, 0.0615797, -122.711 )
+
+[node name="BancoB6" parent="BancosySillones" instance=ExtResource( 5 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -169.611, 0.0615797, -108.356 )
+
+[node name="BancoB5" parent="BancosySillones" instance=ExtResource( 5 )]
+transform = Transform( 2.94055e-07, 0, -1, 0, 1, 0, 1, 0, 2.94055e-07, -124.077, 0.0615797, -108.356 )
+
+[node name="Sillon3" parent="BancosySillones" instance=ExtResource( 17 )]
+transform = Transform( -1, 0, -8.54386e-08, 0, 1, 0, 8.54386e-08, 0, -1, -148.956, 6.34901, -94.4771 )
+
+[node name="BancoA9" parent="BancosySillones" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 64.2263, 0.0615797, 221.695 )
+
+[node name="BancoA8" parent="BancosySillones" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 52.3302, 0.0615797, 221.695 )
+
+[node name="BancoA7" parent="BancosySillones" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 39.3022, 0.0615797, 221.695 )
+
+[node name="BancoB8" parent="BancosySillones" instance=ExtResource( 5 )]
+transform = Transform( -2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 29.344, 0.0615797, 236.05 )
+
+[node name="BancoB7" parent="BancosySillones" instance=ExtResource( 5 )]
+transform = Transform( 2.94055e-07, 0, -1, 0, 1, 0, 1, 0, 2.94055e-07, 74.878, 0.0615797, 236.05 )
+
+[node name="Sillon4" parent="BancosySillones" instance=ExtResource( 17 )]
+transform = Transform( -1, 0, -8.54386e-08, 0, 1, 0, 8.54386e-08, 0, -1, 49.999, 6.34901, 249.93 )
+
+[node name="Accesorios_Ecritorios_Empleados" type="Node" parent="."]
+
+[node name="Carpeta" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, -32.6724, 8.05837, 139.971 )
+
+[node name="CarpetaB" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, -31.5311, 8.47342, 140.218 )
+
+[node name="Fichero_Escritorio" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -32.1659, 8.00539, 139.984 )
+
+[node name="Carpeta2" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, 75.0596, 8.05837, 139.971 )
+
+[node name="CarpetaB2" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, 76.2009, 8.47342, 140.218 )
+
+[node name="Fichero_Escritorio2" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 75.566, 8.00539, 139.984 )
+
+[node name="Carpeta3" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, 124.687, 8.05837, 146.655 )
+
+[node name="CarpetaB3" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, 125.828, 8.47342, 146.902 )
+
+[node name="Fichero_Escritorio3" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 125.193, 8.00539, 146.669 )
+
+[node name="Carpeta4" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, 124.687, 8.05837, 65.1264 )
+
+[node name="CarpetaB4" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, 125.828, 8.47342, 65.3735 )
+
+[node name="Fichero_Escritorio4" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 125.193, 8.00539, 65.1403 )
+
+[node name="Carpeta5" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, -12.7808, 8.05837, 65.1264 )
+
+[node name="CarpetaB5" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, -11.6395, 8.47342, 65.3735 )
+
+[node name="Fichero_Escritorio5" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2744, 8.00539, 65.1403 )
+
+[node name="Carpeta6" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, -15.842, 8.05837, -4.87357 )
+
+[node name="CarpetaB6" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, -14.7007, 8.47342, -4.62654 )
+
+[node name="Fichero_Escritorio6" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3356, 8.00539, -4.8597 )
+
+[node name="Carpeta7" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, 13.6052, 8.05837, -4.87357 )
+
+[node name="CarpetaB7" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, 14.7465, 8.47342, -4.62654 )
+
+[node name="Fichero_Escritorio7" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.1117, 8.00539, -4.8597 )
+
+[node name="Carpeta8" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, 75.8778, 8.05837, -40.3142 )
+
+[node name="CarpetaB8" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, 77.0191, 8.47342, -40.0672 )
+
+[node name="Fichero_Escritorio8" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 76.3843, 8.00539, -40.3004 )
+
+[node name="Carpeta9" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, 105.032, 8.05837, -74.8953 )
+
+[node name="CarpetaB9" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, 106.173, 8.47342, -74.6483 )
+
+[node name="Fichero_Escritorio9" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 105.538, 8.00539, -74.8814 )
+
+[node name="Carpeta10" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, -11.9443, 8.05837, -74.8953 )
+
+[node name="CarpetaB10" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, -10.8029, 8.47342, -74.6483 )
+
+[node name="Fichero_Escritorio10" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4378, 8.00539, -74.8814 )
+
+[node name="Carpeta11" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, 33.1446, 8.05837, -113.652 )
+
+[node name="CarpetaB11" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, 34.2859, 8.47342, -113.405 )
+
+[node name="Fichero_Escritorio11" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33.6511, 8.00539, -113.638 )
+
+[node name="Carpeta12" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 13 )]
+transform = Transform( 0.97475, -0.223301, 0, 0.223301, 0.97475, 0, 0, 0, 1, 105.65, 8.05837, -113.652 )
+
+[node name="CarpetaB12" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 15 )]
+transform = Transform( 0.096025, -0.0279142, 0, 0.0279142, 0.096025, 0, 0, 0, 0.1, 106.791, 8.47342, -113.405 )
+
+[node name="Fichero_Escritorio12" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 106.157, 8.00539, -113.638 )
+
+[node name="Calculadora" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0918584, 0, 0.0395225, 0, 0.1, 0, -0.0395225, 0, -0.0918584, -13.2928, 9.26249, 143 )
+
+[node name="Calculadora2" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.09561, 0, -0.0293039, 0, 0.1, 0, 0.0293039, 0, -0.09561, 63.6709, 9.26249, 143 )
+
+[node name="Calculadora3" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.09561, 0, -0.0293039, 0, 0.1, 0, 0.0293039, 0, -0.09561, 63.6709, 9.26249, 106.839 )
+
+[node name="Calculadora4" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.09561, 0, -0.0293039, 0, 0.1, 0, 0.0293039, 0, -0.09561, 17.5487, 9.26249, 68.1774 )
+
+[node name="Calculadora5" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, 120.337, 9.26249, 68.1774 )
+
+[node name="Calculadora6" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, 120.337, 9.26249, 32.1866 )
+
+[node name="Calculadora7" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, 30.6941, 9.26249, 32.1866 )
+
+[node name="Calculadora8" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, -13.9094, 9.26249, 32.1866 )
+
+[node name="Calculadora9" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, -13.9094, 9.26249, -38.4614 )
+
+[node name="Calculadora10" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, 32.2757, 9.26249, -38.4614 )
+
+[node name="Calculadora11" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, 124.409, 9.26249, -34.1468 )
+
+[node name="Calculadora12" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, 124.409, 9.26249, -113.941 )
+
+[node name="Calculadora13" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 10 )]
+transform = Transform( -0.0883888, 0, 0.0467698, 0, 0.1, 0, -0.0467698, 0, -0.0883888, -11.5297, 9.26249, -113.941 )
+
+[node name="CarpetaB13" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( -3.09216e-09, 0.0707403, 0.0706811, -0.1, -4.37114e-09, 0, 3.08957e-09, -0.0706811, 0.0707403, 14.9849, 9.26249, 140.787 )
+
+[node name="CarpetaD" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, 0.1, 0, -0.1, 0, 0, 0, 0, 0.1, 14.8939, 9.69398, 139.869 )
+
+[node name="CarpetaB14" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( -3.09216e-09, 0.0707403, 0.0706811, -0.1, -4.37114e-09, 0, 3.08957e-09, -0.0706811, 0.0707403, 59.7749, 9.26249, 140.787 )
+
+[node name="CarpetaD2" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, 0.1, 0, -0.1, 0, 0, 0, 0, 0.1, 59.6839, 9.69398, 139.869 )
+
+[node name="CarpetaB15" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( -3.09216e-09, 0.0707403, 0.0706811, -0.1, -4.37114e-09, 0, 3.08957e-09, -0.0706811, 0.0707403, 104.501, 9.26249, 140.787 )
+
+[node name="CarpetaD3" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, 0.1, 0, -0.1, 0, 0, 0, 0, 0.1, 104.41, 9.69398, 139.869 )
+
+[node name="CarpetaB16" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( -3.09216e-09, 0.0707403, 0.0706811, -0.1, -4.37114e-09, 0, 3.08957e-09, -0.0706811, 0.0707403, 125.525, 7.84852, 106.539 )
+
+[node name="CarpetaD4" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, 0.1, 0, -0.1, 0, 0, 0, 0, 0.1, 125.434, 8.28001, 105.621 )
+
+[node name="CarpetaB17" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( -3.09216e-09, 0.0707403, 0.0706811, -0.1, -4.37114e-09, 0, 3.08957e-09, -0.0706811, 0.0707403, 76.8622, 7.84852, 106.391 )
+
+[node name="CarpetaD5" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, 0.1, 0, -0.1, 0, 0, 0, 0, 0.1, 76.7712, 8.28001, 105.474 )
+
+[node name="CarpetaB18" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, 15.9776, 7.84852, 105.764 )
+
+[node name="CarpetaD6" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, 15.1361, 8.28001, 106.141 )
+
+[node name="CarpetaB19" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, -28.7645, 7.84852, 106.71 )
+
+[node name="CarpetaD7" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, -29.606, 8.28001, 107.087 )
+
+[node name="CarpetaB20" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, -30.1553, 8.44574, 33.4723 )
+
+[node name="CarpetaD8" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, -30.9968, 8.87723, 33.8494 )
+
+[node name="CarpetaB21" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, 17.0329, 8.04189, 30.5584 )
+
+[node name="CarpetaD9" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, 16.1915, 8.47338, 30.9356 )
+
+[node name="CarpetaB22" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, 78.8654, 7.99586, 32.2145 )
+
+[node name="CarpetaD10" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, 78.0239, 8.42734, 32.5917 )
+
+[node name="CarpetaB23" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, 127.411, 7.99586, 32.2257 )
+
+[node name="CarpetaD11" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, 126.569, 8.42734, 32.6028 )
+
+[node name="CarpetaB24" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, 108.506, 8.59819, -2.52016 )
+
+[node name="CarpetaD12" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, 107.664, 9.02968, -2.14303 )
+
+[node name="CarpetaB25" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, 62.0929, 8.59819, -2.52016 )
+
+[node name="CarpetaD13" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, 61.2514, 9.02968, -2.14303 )
+
+[node name="CarpetaB26" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, 63.5716, 7.87335, -36.3135 )
+
+[node name="CarpetaD14" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, 62.7301, 8.30483, -35.9363 )
+
+[node name="CarpetaB27" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, 124.269, 7.87335, -36.3135 )
+
+[node name="CarpetaD15" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, 123.428, 8.30483, -35.9363 )
+
+[node name="CarpetaB28" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 16 )]
+transform = Transform( 3.91042e-09, -0.0894599, 0.0446869, -0.1, -4.37114e-09, 0, 1.95333e-09, -0.0446869, -0.0894599, -25.745, 7.87335, -36.3135 )
+
+[node name="CarpetaD16" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 11 )]
+transform = Transform( 0, -0.031699, 0.0948429, -0.1, 0, 0, 0, -0.0948429, -0.031699, -26.5864, 8.30483, -35.9363 )
+
+[node name="Anotador" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -15.1461, 7.76283, 103.583 )
+
+[node name="Anotador2" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0730115, 0, -0.0683325, 0, 0.1, 0, 0.0683325, 0, 0.0730115, 32.4601, 7.76283, 108.322 )
+
+[node name="Anotador3" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0730115, 0, -0.0683325, 0, 0.1, 0, 0.0683325, 0, 0.0730115, 14.1829, 7.76283, 63.8244 )
+
+[node name="Anotador4" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0730115, 0, -0.0683325, 0, 0.1, 0, 0.0683325, 0, 0.0730115, 76.3512, 7.76283, 65.2112 )
+
+[node name="Anotador5" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0730115, 0, -0.0683325, 0, 0.1, 0, 0.0683325, 0, 0.0730115, 106.534, 7.76283, 29.5445 )
+
+[node name="Anotador6" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0970691, 0, 0.024033, 0, 0.1, 0, -0.024033, 0, 0.0970691, 64.3691, 7.76283, 29.5445 )
+
+[node name="Anotador7" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0970691, 0, 0.024033, 0, 0.1, 0, -0.024033, 0, 0.0970691, 64.3691, 7.76283, -5.93274 )
+
+[node name="Anotador8" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0970691, 0, 0.024033, 0, 0.1, 0, -0.024033, 0, 0.0970691, -30.0003, 7.76283, -80.9828 )
+
+[node name="Anotador9" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0970691, 0, 0.024033, 0, 0.1, 0, -0.024033, 0, 0.0970691, -30.0003, 7.76283, -117.634 )
+
+[node name="Anotador10" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0970691, 0, 0.024033, 0, 0.1, 0, -0.024033, 0, 0.0970691, 64.3318, 7.76283, -117.634 )
+
+[node name="Anotador11" parent="Accesorios_Ecritorios_Empleados" instance=ExtResource( 12 )]
+transform = Transform( 0.0534957, 0, -0.0844879, 0, 0.1, 0, 0.0844879, 0, 0.0534957, 77.5645, 7.76283, -79.1301 )
+
+[node name="Cuadros" type="Node" parent="."]
+
+[node name="CuadroC" parent="Cuadros" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 0.2, 0, 0.2, 0, -0.2, 0, -4.37114e-08, -79.1666, 9.13001, 182.538 )
+
+[node name="CuadroC2" parent="Cuadros" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-08, 0, 0.2, 0, 0.2, 0, -0.2, 0, -4.37114e-08, -195.85, 9.13001, -123.613 )
+
+[node name="CuadroA" parent="Cuadros" instance=ExtResource( 8 )]
+transform = Transform( -2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, -118.7, 9.21991, 295.203 )
+
+[node name="CuadroB" parent="Cuadros" instance=ExtResource( 9 )]
+transform = Transform( -2, 0, -1.74846e-07, 0, 2, 0, 1.74846e-07, 0, -2, -0.00748958, 9.90561, 295.321 )
+
+[node name="CuadroA2" parent="Cuadros" instance=ExtResource( 8 )]
+transform = Transform( 2.62268e-07, 0, -2, 0, 2, 0, 2, 0, 2.62268e-07, 195.356, 7.88055, 67.5117 )
+
+[node name="CuadroB2" parent="Cuadros" instance=ExtResource( 9 )]
+transform = Transform( 2.62268e-07, 0, -2, 0, 2, 0, 2, 0, 2.62268e-07, 195.474, 8.56625, -51.1809 )
+
+[node name="Extras" type="Node" parent="."]
+
+[node name="MuebleB" parent="Extras" instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7407, 0.0615797, -291.59 )
+
+[node name="MuebleB2" parent="Extras" instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4793, 0.0615797, -291.59 )
+
+[node name="MuebleB3" parent="Extras" instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0808, 0.0615797, -291.59 )
+
+[node name="Fax" parent="Extras" instance=ExtResource( 40 )]
+transform = Transform( 0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -10.5459, 9.0222, -291.606 )
+
+[node name="Fotocopiadora" parent="Extras" instance=ExtResource( 37 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.91158, 0.0615797, -290.419 )
+
+[node name="Impresora" parent="Extras" instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.8822, 9.01553, -292.986 )
+
+[node name="MuebleC" parent="Extras" instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9559, 0.0615797, -291.937 )
+
+[node name="Lampara" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -132.768, 0.0615797, -94.746 )
+
+[node name="Lampara3" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -168.649, 0.0615797, -94.746 )
+
+[node name="Lampara4" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 26.2538, 0.0615797, 252.543 )
+
+[node name="Lampara5" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 75.2056, 0.0615797, 252.543 )
+
+[node name="Libreria" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 76.4617, 0.0615797, 293.369 )
+
+[node name="Libreria2" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 57.5904, 0.0615797, 293.369 )
+
+[node name="Libreria3" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 39.2944, 0.0615797, 293.369 )
+
+[node name="Libreria4" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 20.8202, 0.0615797, 293.369 )
+
+[node name="Libreria5" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.56956e-08, 0, -1, 0, 1, 0, 1, 0, -4.56956e-08, 97.8519, 0.0615797, 244.553 )
+
+[node name="Libreria6" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.56956e-08, 0, -1, 0, 1, 0, 1, 0, -4.56956e-08, 97.8519, 0.0615797, 226.316 )
+
+[node name="Libreria7" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.56956e-08, 0, -1, 0, 1, 0, 1, 0, -4.56956e-08, 97.8519, 0.0615797, 262.589 )
+
+[node name="Libreria8" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.56956e-08, 0, -1, 0, 1, 0, 1, 0, -4.56956e-08, 97.8519, 0.0615797, 280.978 )
+
+[node name="Libreria9" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, -118.1, 0.0615797, -75.007 )
+
+[node name="Libreria10" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, -136.589, 0.0615797, -75.007 )
+
+[node name="Libreria11" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, -155.376, 0.0615797, -75.007 )
+
+[node name="Libreria12" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, -174.788, 0.0615797, -75.007 )
+
+[node name="Libreria13" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( 1.33118e-07, 0, 1, 0, 1, 0, -1, 0, 1.33118e-07, -193.268, 0.0615797, -89.1144 )
+
+[node name="MesadaA" parent="Extras" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -149.518, 0.0615797, -108.991 )
+
+[node name="MesadaB" parent="Extras" instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95487, 0.146717, 289.762 )
+
+[node name="MesadaA2" parent="Extras" instance=ExtResource( 28 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.4547, 0.0615797, 237.565 )
+
+[node name="Planta" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.8723, 0.0615797, -288.574 )
+
+[node name="Planta4" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.5132, 0.0615797, -288.574 )
+
+[node name="Planta3" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -188.39, 0.0615797, -103.008 )
+
+[node name="Planta2" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8204, 0.0615797, 289.201 )
+
+[node name="Planta5" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1039, 4.30225, 239.189 )
+
+[node name="Cactus" parent="Extras" instance=ExtResource( 36 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.24714, 8.1707, 291.106 )
+
+[node name="Reloj2" parent="Extras" instance=ExtResource( 39 )]
+transform = Transform( -0.0227286, 0, -0.299138, 0, 0.3, 0, 0.299138, 0, -0.0227286, 195.339, 14.0961, 98.6407 )
+
+[node name="Reloj" parent="Extras" instance=ExtResource( 39 )]
+transform = Transform( -0.0227286, 0, -0.299138, 0, 0.3, 0, 0.299138, 0, -0.0227286, 195.339, 14.0961, -81.3934 )
+
+[node name="PuertaB" parent="Extras" instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -195.46, -1.46163, 254.461 )
+
+[node name="Tacho" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16789, 0.0615797, 144.848 )
+
+[node name="Tacho9" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.89198, 0.0615797, -285.7 )
+
+[node name="Tacho2" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16789, 0.0615797, 65.3952 )
+
+[node name="Tacho3" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16789, 0.0615797, -6.33231 )
+
+[node name="Tacho4" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16789, 0.0615797, -82.8189 )
+
+[node name="Tacho8" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.9319, 0.0615797, 144.848 )
+
+[node name="Tacho7" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.9319, 0.0615797, 65.3952 )
+
+[node name="Tacho6" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.9319, 0.0615797, -6.33231 )
+
+[node name="Tacho5" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.9319, 0.0615797, -82.8189 )
+
+[node name="Telefono" parent="Extras" instance=ExtResource( 41 )]
+transform = Transform( -0.0965926, 0, 0.0258819, 0, 0.1, 0, -0.0258819, 0, -0.0965926, 5.2354, 7.99269, 288.305 )
+
+[node name="Lampara2" parent="Extras" instance=ExtResource( 31 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 4.13774, 7.99269, 292.744 )
+
+[node name="Taza" parent="Extras" instance=ExtResource( 21 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -148.379, 4.36975, -107.351 )
+
+[node name="TazaB" parent="Extras" instance=ExtResource( 25 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -146.05, 4.36975, -109.012 )
+
+[node name="VentanaC" parent="Extras" instance=ExtResource( 33 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 194.568, 6.25875, 8.36778 )
+
+[node name="VentanaC3" parent="Extras" instance=ExtResource( 33 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 194.568, 6.25875, -133.799 )
+
+[node name="VentanaC4" parent="Extras" instance=ExtResource( 33 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 194.568, 6.25875, 160.574 )
+
+[node name="VentanaB" parent="Extras" instance=ExtResource( 38 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -195.093, 9.33684, -170.105 )
+
+[node name="VentanaA" parent="Extras" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2329, 8.9604, -291.239 )
+
+[node name="VentanaA2" parent="Extras" instance=ExtResource( 27 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -56.3215, 7.1541, 294.719 )
+
+[node name="Salas_Lucio" type="Node" parent="."]
+
+[node name="SalaCopiado" parent="Salas_Lucio" instance=ExtResource( 29 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -163.326, 0, 33.7489 )
+
+[node name="SalaReuniones" parent="Salas_Lucio" instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -140.226, 0, 108.712 )

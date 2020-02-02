@@ -1,13 +1,17 @@
 extends Node
 
-var time_left = 60
-var points = 0
+var bgm_menu = preload("res://assets/sounds/menusaurus.ogg")
+var bgm_game = preload("res://assets/sounds/techrex.ogg")
+
+var time_left = 120
+var points = 5000
 var timer
 var character
 var playButton
 var MainMenu
 var Logo
 var GUI
+
 var fixers
 var tofix
 var actual_fixer
@@ -17,9 +21,12 @@ var actual_fixer_logo
 var actual_fixer_texture_gui
 onready var number_label 
 onready var points_label 
+var bgm_player
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var root = get_tree().get_current_scene()
+	bgm_player = root.get_node("AudioStreamPlayer")
 	GUI = root.get_node("GUI")
 	number_label = GUI.get_node("TimerLabel")
 	points_label = GUI.get_node("PointsLabel")
@@ -33,10 +40,6 @@ func _ready():
 	
 	updateFixer(0)
 
-	timer = Timer.new()
-	timer.set_wait_time(time_left)
-	timer.connect("timeout",self,"_on_timer_timeout") 
-	
 	playButton.connect("pressed",self,"game_start")
 	character.is_moveable = false
 	add_child(timer) #to process
@@ -61,12 +64,17 @@ func _on_timer_timeout():
 	#game_over_screen()
 	print("se termino el tiempo BRO")
    #your_timer_stuff()
+
 func game_start():
 	character.is_moveable = true
 	GUI.show()
 	MainMenu.hide()
 	Logo.hide()
 	timer.start()
+	bgm_player.stop()
+	bgm_player.stream = bgm_game
+	bgm_player.play()
+
 	
 func updateFixer(i):
 	actual_fixer = fixers[i]
