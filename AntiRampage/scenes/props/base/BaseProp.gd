@@ -11,6 +11,7 @@ export(Material)  var material setget material_set
 #var has_material_changed = false
 #
 func mesh_set(new_mesh):
+
 	mesh = new_mesh
 	if (mesh != null):
 		var mesh_instance = $MeshInstance
