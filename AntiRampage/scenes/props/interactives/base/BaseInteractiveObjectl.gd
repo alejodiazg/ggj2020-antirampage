@@ -22,17 +22,17 @@ func get_name():
 
 func _process(_delta):
 	if holder != null:
-#		self.set_rotation_deegrees =  + old_rotation
-		
 		var basis = Quat(holder.global_transform.basis.get_euler() + old_rotation)
 		var nuevo_transform = Transform(basis)
 		self.global_transform = nuevo_transform
 		self.translation = holder.get_global_transform().origin
 #		self.global_transform = holder.get_global_transform()
+#		self.rotation = holder.rotation + old_rotation
 
 func picked_up(parent):
 	self.set_mode(1)
 	old_rotation = global_transform.basis.get_euler()
+#	old_rotation = self.rotation
 	holder = parent
 	
 func disable_char_collision():
