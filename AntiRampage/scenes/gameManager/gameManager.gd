@@ -11,7 +11,6 @@ var playButton
 var MainMenu
 var Logo
 var GUI
-
 var fixers
 var tofix
 var actual_fixer
@@ -40,6 +39,10 @@ func _ready():
 	
 	updateFixer(0)
 
+	timer = Timer.new()
+	timer.set_wait_time(time_left)
+	timer.connect("timeout",self,"_on_timer_timeout") 
+	
 	playButton.connect("pressed",self,"game_start")
 	character.is_moveable = false
 	add_child(timer) #to process
