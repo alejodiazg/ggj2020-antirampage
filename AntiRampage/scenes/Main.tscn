@@ -24,6 +24,10 @@ adjustment_saturation = 3.91
 
 [node name="Main" type="Spatial"]
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+
 [node name="MainMenu" parent="." instance=ExtResource( 2 )]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -33,7 +37,3 @@ environment = SubResource( 1 )
 
 [node name="GUI" parent="." instance=ExtResource( 1 )]
 visible = false
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
-autoplay = true
