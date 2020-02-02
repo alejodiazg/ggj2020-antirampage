@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/Paredes.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://assets/PisoEntero.obj" type="ArrayMesh" id=7]
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=8]
-[ext_resource path="res://scenes/characters/grab_ray/GrabRay.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/props/interactives/Pill.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/props/env_props/EscritorioA.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/props/env_props/EscritorioC.tscn" type="PackedScene" id=11]
 
@@ -20,7 +20,7 @@ fog_color = Color( 0, 0, 0, 1 )
 [sub_resource type="SpatialMaterial" id=2]
 albedo_color = Color( 0.223529, 0.152941, 0.152941, 1 )
 
-[sub_resource type="ConvexPolygonShape" id=35]
+[sub_resource type="ConvexPolygonShape" id=3]
 points = PoolVector3Array( -150.761, -0.761421, -120.761, -150.761, -0.761421, 121.371, 150.761, -0.761421, -120.761, 150.761, -0.761421, 121.371 )
 
 [sub_resource type="SpatialMaterial" id=4]
@@ -116,13 +116,13 @@ points = PoolVector3Array( 142.64, -0.819769, -120.837, 142.64, -0.819769, -114.
 [sub_resource type="ConvexPolygonShape" id=34]
 points = PoolVector3Array( -150.821, -0.819769, -120.837, -150.821, 30.3314, -120.837, -149.042, 30, -114.349, -145, 0.264569, -114.508, 16.3954, -0.819769, -120.837, 16.3954, -0.819769, -114.279, 16.3954, 30.3314, -120.837, 16.3954, 30.3314, -114.279 )
 
+[sub_resource type="PhysicsMaterial" id=35]
+
 [sub_resource type="PhysicsMaterial" id=36]
 
 [sub_resource type="PhysicsMaterial" id=37]
 
 [sub_resource type="PhysicsMaterial" id=38]
-
-[sub_resource type="PhysicsMaterial" id=39]
 
 [node name="main" type="Spatial"]
 
@@ -146,7 +146,7 @@ mesh = ExtResource( 7 )
 material/0 = ExtResource( 8 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody_piso"]
-shape = SubResource( 35 )
+shape = SubResource( 3 )
 
 [node name="StaticBody_piso3" type="StaticBody" parent="."]
 
@@ -251,33 +251,37 @@ shape = SubResource( 33 )
 [node name="CollisionShape2" type="CollisionShape" parent="StaticBody_piso3"]
 shape = SubResource( 34 )
 
-[node name="dino" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.18828, -19.6558 )
-
-[node name="RayCast" parent="dino/KinematicBody" index="2" instance=ExtResource( 9 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.709248, 1.29807 )
-
-[node name="Camera" parent="dino/KinematicBody/target" index="0"]
-transform = Transform( -1, -4.37114e-08, 7.57104e-08, 0, 0.866026, 0.5, -8.74228e-08, 0.5, -0.866026, -77.9279, 46.9631, 20.893 )
-fov = 106.7
-near = 0.17
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
 autoplay = true
 
 [node name="Cafetera" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -108.217, 8.39178, -58.2668 )
-physics_material_override = SubResource( 36 )
+physics_material_override = SubResource( 35 )
 
 [node name="Cafetera2" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -63.8796, 8.77527, -93.2142 )
-physics_material_override = SubResource( 37 )
+physics_material_override = SubResource( 36 )
 
 [node name="EscritorioA" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -61.0193 )
 mass = 753.04
-physics_material_override = SubResource( 38 )
+physics_material_override = SubResource( 37 )
+
+[node name="EscritorioA3" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -1.93555 )
+mass = 753.04
+physics_material_override = SubResource( 37 )
+
+[node name="EscritorioA4" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -31.266 )
+mass = 753.04
+physics_material_override = SubResource( 37 )
+
+[node name="EscritorioA5" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -90.9783 )
+mass = 753.04
+physics_material_override = SubResource( 37 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.00272269, -0.999996, 0, 0.999996, 0.00272269, 0, 151.915, -43.862 )
@@ -287,9 +291,12 @@ light_indirect_energy = 7.43
 
 [node name="Dispenser" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -140.815, 0, 0 )
-physics_material_override = SubResource( 39 )
+physics_material_override = SubResource( 38 )
 
 [node name="EscritorioA2" parent="." instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -68.3554, 0, -92.2861 )
 
-[editable path="dino"]
+[node name="dino" parent="." instance=ExtResource( 2 )]
+
+[node name="BaseProp" parent="." instance=ExtResource( 9 )]
+transform = Transform( 2.9219, 0, 0, 0, 2.9219, 0, 0, 0, 2.9219, -0.00582409, 9.53344, 17.1967 )
