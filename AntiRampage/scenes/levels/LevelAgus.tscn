@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=2]
+[gd_scene load_steps=90 format=2]
 
 [ext_resource path="res://assets/Enviroment/SM_Level.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scenes/levels/Groups/EscritoriosWorkSpace.tscn" type="PackedScene" id=2]
@@ -19,7 +19,7 @@
 [ext_resource path="res://scenes/props/env_props/Sillon.tscn" type="PackedScene" id=17]
 [ext_resource path="res://scenes/props/env_props/MesadaB.tscn" type="PackedScene" id=18]
 [ext_resource path="res://scenes/props/env_props/PuertaB.tscn" type="PackedScene" id=19]
-[ext_resource path="res://scenes/props/env_props/PuertaC.tscn" type="PackedScene" id=20]
+[ext_resource path="res://scenes/levels/Groups/SalaReuniones.tscn" type="PackedScene" id=20]
 [ext_resource path="res://scenes/props/env_props/Taza.tscn" type="PackedScene" id=21]
 [ext_resource path="res://scenes/props/env_props/MuebleC.tscn" type="PackedScene" id=22]
 [ext_resource path="res://scenes/props/env_props/Impresora.tscn" type="PackedScene" id=23]
@@ -28,10 +28,11 @@
 [ext_resource path="res://scenes/props/env_props/MuebleB.tscn" type="PackedScene" id=26]
 [ext_resource path="res://scenes/props/env_props/VentanaA.tscn" type="PackedScene" id=27]
 [ext_resource path="res://scenes/props/env_props/MesadaA.tscn" type="PackedScene" id=28]
-[ext_resource path="res://scenes/props/env_props/Parlante.tscn" type="PackedScene" id=29]
+[ext_resource path="res://scenes/levels/Groups/SalaCopiado.tscn" type="PackedScene" id=29]
 [ext_resource path="res://scenes/props/env_props/PlantaA.tscn" type="PackedScene" id=30]
 [ext_resource path="res://scenes/props/env_props/Lampara_Escritorio.tscn" type="PackedScene" id=31]
 [ext_resource path="res://scenes/props/env_props/PlantaB.tscn" type="PackedScene" id=32]
+[ext_resource path="res://scenes/props/env_props/VentanaC.tscn" type="PackedScene" id=33]
 [ext_resource path="res://scenes/props/env_props/Libreria.tscn" type="PackedScene" id=34]
 [ext_resource path="res://scenes/props/env_props/Tacho.tscn" type="PackedScene" id=35]
 [ext_resource path="res://scenes/props/env_props/PlantaC.tscn" type="PackedScene" id=36]
@@ -794,36 +795,6 @@ transform = Transform( 2.62268e-07, 0, -2, 0, 2, 0, 2, 0, 2.62268e-07, 195.356, 
 [node name="CuadroB2" parent="Cuadros" instance=ExtResource( 9 )]
 transform = Transform( 2.62268e-07, 0, -2, 0, 2, 0, 2, 0, 2.62268e-07, 195.474, 8.56625, -51.1809 )
 
-[node name="RigidBody" parent="." instance=ExtResource( 29 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00582409, 0.0615797, -8.29593 )
-
-[node name="Planta" parent="." instance=ExtResource( 30 )]
-
-[node name="Planta2" parent="." instance=ExtResource( 32 )]
-
-[node name="Cactus" parent="." instance=ExtResource( 36 )]
-
-[node name="PuertaB" parent="." instance=ExtResource( 19 )]
-
-[node name="PuertaC" parent="." instance=ExtResource( 20 )]
-
-[node name="Reloj" parent="." instance=ExtResource( 39 )]
-
-[node name="Tacho" parent="." instance=ExtResource( 35 )]
-
-[node name="Taza" parent="." instance=ExtResource( 21 )]
-
-[node name="TazaB" parent="." instance=ExtResource( 25 )]
-
-[node name="Telefono" parent="." instance=ExtResource( 41 )]
-
-[node name="VentanaA" parent="." instance=ExtResource( 27 )]
-
-[node name="VentanaB" parent="." instance=ExtResource( 38 )]
-
-[node name="Lampara2" parent="." instance=ExtResource( 31 )]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.00582409, 0.0615797, 6.49136 )
-
 [node name="Extras" type="Node" parent="."]
 
 [node name="MuebleB" parent="Extras" instance=ExtResource( 26 )]
@@ -906,3 +877,95 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95487, 0.146717, 289.762 )
 
 [node name="MesadaA2" parent="Extras" instance=ExtResource( 28 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.4547, 0.0615797, 237.565 )
+
+[node name="Planta" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -26.8723, 0.0615797, -288.574 )
+
+[node name="Planta4" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.5132, 0.0615797, -288.574 )
+
+[node name="Planta3" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -188.39, 0.0615797, -103.008 )
+
+[node name="Planta2" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8204, 0.0615797, 289.201 )
+
+[node name="Planta5" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1039, 4.30225, 239.189 )
+
+[node name="Cactus" parent="Extras" instance=ExtResource( 36 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.24714, 8.1707, 291.106 )
+
+[node name="Reloj2" parent="Extras" instance=ExtResource( 39 )]
+transform = Transform( -0.0227286, 0, -0.299138, 0, 0.3, 0, 0.299138, 0, -0.0227286, 195.339, 14.0961, 98.6407 )
+
+[node name="Reloj" parent="Extras" instance=ExtResource( 39 )]
+transform = Transform( -0.0227286, 0, -0.299138, 0, 0.3, 0, 0.299138, 0, -0.0227286, 195.339, 14.0961, -81.3934 )
+
+[node name="PuertaB" parent="Extras" instance=ExtResource( 19 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -195.46, -1.46163, 254.461 )
+
+[node name="Tacho" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16789, 0.0615797, 144.848 )
+
+[node name="Tacho9" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.89198, 0.0615797, -285.7 )
+
+[node name="Tacho2" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16789, 0.0615797, 65.3952 )
+
+[node name="Tacho3" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16789, 0.0615797, -6.33231 )
+
+[node name="Tacho4" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.16789, 0.0615797, -82.8189 )
+
+[node name="Tacho8" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.9319, 0.0615797, 144.848 )
+
+[node name="Tacho7" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.9319, 0.0615797, 65.3952 )
+
+[node name="Tacho6" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.9319, 0.0615797, -6.33231 )
+
+[node name="Tacho5" parent="Extras" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 38.9319, 0.0615797, -82.8189 )
+
+[node name="Telefono" parent="Extras" instance=ExtResource( 41 )]
+transform = Transform( -0.0965926, 0, 0.0258819, 0, 0.1, 0, -0.0258819, 0, -0.0965926, 5.2354, 7.99269, 288.305 )
+
+[node name="Lampara2" parent="Extras" instance=ExtResource( 31 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 4.13774, 7.99269, 292.744 )
+
+[node name="Taza" parent="Extras" instance=ExtResource( 21 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -148.379, 4.36975, -107.351 )
+
+[node name="TazaB" parent="Extras" instance=ExtResource( 25 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -146.05, 4.36975, -109.012 )
+
+[node name="VentanaC" parent="Extras" instance=ExtResource( 33 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 194.568, 6.25875, 8.36778 )
+
+[node name="VentanaC3" parent="Extras" instance=ExtResource( 33 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 194.568, 6.25875, -133.799 )
+
+[node name="VentanaC4" parent="Extras" instance=ExtResource( 33 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 194.568, 6.25875, 160.574 )
+
+[node name="VentanaB" parent="Extras" instance=ExtResource( 38 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -195.093, 9.33684, -170.105 )
+
+[node name="VentanaA" parent="Extras" instance=ExtResource( 27 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2329, 8.9604, -291.239 )
+
+[node name="VentanaA2" parent="Extras" instance=ExtResource( 27 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -56.3215, 7.1541, 294.719 )
+
+[node name="Salas_Lucio" type="Node" parent="."]
+
+[node name="SalaCopiado" parent="Salas_Lucio" instance=ExtResource( 29 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -163.326, 0, 33.7489 )
+
+[node name="SalaReuniones" parent="Salas_Lucio" instance=ExtResource( 20 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -140.226, 0, 108.712 )
