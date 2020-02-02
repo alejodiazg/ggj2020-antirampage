@@ -17,6 +17,9 @@ const DE_ACCELERATION = 3
 
 func _ready():
 	character = get_node(".")
+	
+	get_node("Animadino/AnimationPlayer").get_animation("default").set_loop(true)
+	get_node("Animadino/AnimationPlayer").play("default")
 	pass 
 		
 func _physics_process(delta):
@@ -75,6 +78,7 @@ func input_processing(delta):
 		
 		if is_moving:
 			
+			get_node("Animadino/AnimationPlayer").play("default")
 			# Rotate the player to direction
 			var angle = atan2(hv.x, hv.z)
 			
@@ -82,6 +86,8 @@ func input_processing(delta):
 			
 			char_rot.y = angle
 			character.set_rotation(char_rot)
+		else:
+			get_node("Animadino/AnimationPlayer").stop()
 	
 	
 	if (Input.is_action_just_pressed("rotar")):
@@ -122,7 +128,7 @@ func release_object():
 
 func rotate_axis(mouse):
 	var cameraObj = get_node("target/Camera")
-	var screenPoint = cameraObj.unproject_position(get_node('dino').get_global_transform().origin)
+	var screenPoint = cameraObj.unproject_position(get_node('Animadino').get_global_transform().origin)
 	
 	var offset = Vector2(mouse.x - screenPoint.x, mouse.y - screenPoint.y)
 	
