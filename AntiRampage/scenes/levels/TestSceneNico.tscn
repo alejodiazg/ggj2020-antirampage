@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/Paredes.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://assets/PisoEntero.obj" type="ArrayMesh" id=7]
 [ext_resource path="res://assets/MaterialMadre.material" type="Material" id=8]
-[ext_resource path="res://scenes/props/interactives/Pill.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/props/interactives/Plant.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/props/env_props/EscritorioA.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/props/env_props/EscritorioC.tscn" type="PackedScene" id=11]
 
@@ -299,4 +299,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -68.3554, 0, -92.2861 )
 [node name="dino" parent="." instance=ExtResource( 2 )]
 
 [node name="BaseProp" parent="." instance=ExtResource( 9 )]
-transform = Transform( 2.9219, 0, 0, 0, 2.9219, 0, 0, 0, 2.9219, -0.00582409, 9.53344, 17.1967 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 21.9473 )
