@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/gameManager/gameManager.gd" type="Script" id=1]
+[ext_resource path="res://assets/Enviroment/SM_Paredes.obj" type="ArrayMesh" id=2]
+
+[node name="gameManager" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource( 1 )

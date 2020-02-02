@@ -16,6 +16,7 @@ const ACCELERATION = 3
 const DE_ACCELERATION = 5
 
 func _ready():
+	print("geeee")
 	character = get_node(".")
 	pass 
 		
