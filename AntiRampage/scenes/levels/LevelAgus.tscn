@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=2]
+[gd_scene load_steps=99 format=2]
 
 [ext_resource path="res://assets/Enviroment/SM_Level.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://scenes/levels/Groups/EscritoriosWorkSpace.tscn" type="PackedScene" id=2]
@@ -41,6 +41,15 @@
 [ext_resource path="res://scenes/props/env_props/Reloj.tscn" type="PackedScene" id=39]
 [ext_resource path="res://scenes/props/env_props/Fax.tscn" type="PackedScene" id=40]
 [ext_resource path="res://scenes/props/env_props/Telefono.tscn" type="PackedScene" id=41]
+[ext_resource path="res://scenes/props/env_props/EscritorioC.tscn" type="PackedScene" id=42]
+[ext_resource path="res://scenes/props/env_props/Monitor.tscn" type="PackedScene" id=43]
+[ext_resource path="res://scenes/props/env_props/BancoC.tscn" type="PackedScene" id=44]
+[ext_resource path="res://scenes/props/env_props/Pizarron.tscn" type="PackedScene" id=45]
+[ext_resource path="res://scenes/props/env_props/Hojas.tscn" type="PackedScene" id=46]
+[ext_resource path="res://scenes/props/env_props/Parlante.tscn" type="PackedScene" id=47]
+[ext_resource path="res://scenes/props/env_props/Dispenser.tscn" type="PackedScene" id=48]
+[ext_resource path="res://scenes/props/env_props/Cafetera.tscn" type="PackedScene" id=49]
+[ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=50]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 points = PoolVector3Array( -95.489, 4.43129, 66.3507, -95.2649, 30.3362, 67.0678, -94.6752, 5.73371, 63.0319, -94.6718, 29.3871, 63.0452, -85.6879, 4.78993, 124.538, -85.6879, 30.3362, 124.538, -79.9424, 5.81538, 63.2361, -79.9424, 29.3108, 63.2361, -79.7939, 29.5484, 122.569, -79.7494, 5.5066, 122.746 )
@@ -800,6 +809,18 @@ transform = Transform( 2.62268e-07, 0, -2, 0, 2, 0, 2, 0, 2.62268e-07, 195.474, 
 [node name="MuebleB" parent="Extras" instance=ExtResource( 26 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7407, 0.0615797, -291.59 )
 
+[node name="MuebleB4" parent="Extras" instance=ExtResource( 26 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 171.497, 0.0615797, 292.631 )
+
+[node name="MuebleB5" parent="Extras" instance=ExtResource( 26 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 165.08, 0.0615797, 292.631 )
+
+[node name="MuebleB6" parent="Extras" instance=ExtResource( 26 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 136.08, 0.0615797, 292.631 )
+
+[node name="MuebleB7" parent="Extras" instance=ExtResource( 26 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 129.698, 0.0615797, 292.631 )
+
 [node name="MuebleB2" parent="Extras" instance=ExtResource( 26 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4793, 0.0615797, -291.59 )
 
@@ -821,6 +842,24 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9559, 0.0615797, -291.937 )
 [node name="Lampara" parent="Extras" instance=ExtResource( 24 )]
 transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -132.768, 0.0615797, -94.746 )
 
+[node name="Lampara6" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -40.8532, 0.0615797, -279.288 )
+
+[node name="Lampara7" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 182.437, 0.0615797, -151.854 )
+
+[node name="Lampara8" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 182.437, 0.0615797, 150.871 )
+
+[node name="Lampara9" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 182.437, 0.0615797, 0.974518 )
+
+[node name="Lampara10" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 182.437, 0.0615797, -85.0566 )
+
+[node name="Lampara11" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 182.437, 0.0615797, 82.4889 )
+
 [node name="Lampara3" parent="Extras" instance=ExtResource( 24 )]
 transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -168.649, 0.0615797, -94.746 )
 
@@ -830,8 +869,44 @@ transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 26.2538, 0.0615797, 252.
 [node name="Lampara5" parent="Extras" instance=ExtResource( 24 )]
 transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 75.2056, 0.0615797, 252.543 )
 
+[node name="Lampara12" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -173.433, 0.0615797, 285.469 )
+
+[node name="Lampara13" parent="Extras" instance=ExtResource( 24 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -173.433, 0.0615797, 219.787 )
+
 [node name="Libreria" parent="Extras" instance=ExtResource( 34 )]
 transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 76.4617, 0.0615797, 293.369 )
+
+[node name="Libreria14" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 116.086, 0.0615797, 293.466 )
+
+[node name="Libreria15" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 185.617, 0.0615797, 293.466 )
+
+[node name="Libreria16" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.56956e-08, 0, -1, 0, 1, 0, 1, 0, -4.56956e-08, 193.744, 0.0615797, 275.514 )
+
+[node name="Libreria17" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.56956e-08, 0, -1, 0, 1, 0, 1, 0, -4.56956e-08, 193.744, 0.0615797, 255.88 )
+
+[node name="Libreria18" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.56956e-08, 0, -1, 0, 1, 0, 1, 0, -4.56956e-08, 193.744, 0.0615797, 236.89 )
+
+[node name="Libreria19" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.56956e-08, 0, -1, 0, 1, 0, 1, 0, -4.56956e-08, 193.744, 0.0615797, 217.403 )
+
+[node name="Libreria20" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.17272e-08, 0, 1, 0, 1, 0, -1, 0, -4.17272e-08, 104.978, 0.0615797, 217.403 )
+
+[node name="Libreria21" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.17272e-08, 0, 1, 0, 1, 0, -1, 0, -4.17272e-08, 104.978, 0.0615797, 236.473 )
+
+[node name="Libreria22" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.17272e-08, 0, 1, 0, 1, 0, -1, 0, -4.17272e-08, 104.978, 0.0615797, 255.928 )
+
+[node name="Libreria23" parent="Extras" instance=ExtResource( 34 )]
+transform = Transform( -4.17272e-08, 0, 1, 0, 1, 0, -1, 0, -4.17272e-08, 104.978, 0.0615797, 275.662 )
 
 [node name="Libreria2" parent="Extras" instance=ExtResource( 34 )]
 transform = Transform( -1, 0, 8.9407e-08, 0, 1, 0, -8.9407e-08, 0, -1, 57.5904, 0.0615797, 293.369 )
@@ -887,11 +962,53 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30.5132, 0.0615797, -288.574 )
 [node name="Planta3" parent="Extras" instance=ExtResource( 30 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -188.39, 0.0615797, -103.008 )
 
+[node name="Planta6" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -188.39, 0.0615797, -191.401 )
+
+[node name="Planta7" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.423, 0.0615797, -169.556 )
+
+[node name="Planta8" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.423, 0.0615797, 177.817 )
+
+[node name="Planta9" parent="Extras" instance=ExtResource( 30 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 89.3742, 0.0615797, 207.384 )
+
 [node name="Planta2" parent="Extras" instance=ExtResource( 32 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8204, 0.0615797, 289.201 )
 
+[node name="Planta18" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -185.814, 0.0615797, 271.576 )
+
+[node name="Planta19" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -185.814, 0.0615797, 237.316 )
+
 [node name="Planta5" parent="Extras" instance=ExtResource( 32 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1039, 4.30225, 239.189 )
+
+[node name="Planta10" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.106, -0.033597, 165.891 )
+
+[node name="Planta11" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.106, -0.033597, 93.3337 )
+
+[node name="Planta12" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.106, -0.033597, 70.4746 )
+
+[node name="Planta13" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.106, -0.033597, 13.6557 )
+
+[node name="Planta14" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.106, -0.033597, -10.3073 )
+
+[node name="Planta15" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.106, -0.033597, -71.295 )
+
+[node name="Planta16" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.106, -0.033597, -96.2182 )
+
+[node name="Planta17" parent="Extras" instance=ExtResource( 32 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.106, -0.033597, -143.088 )
 
 [node name="Cactus" parent="Extras" instance=ExtResource( 36 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.24714, 8.1707, 291.106 )
@@ -962,6 +1079,21 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2329, 8.9604, -291.239 )
 [node name="VentanaA2" parent="Extras" instance=ExtResource( 27 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -56.3215, 7.1541, 294.719 )
 
+[node name="Dispenser2" parent="Extras" instance=ExtResource( 48 )]
+transform = Transform( 2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 186.788, 0.0615797, 188.226 )
+
+[node name="Dispenser3" parent="Extras" instance=ExtResource( 48 )]
+transform = Transform( 2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 186.788, 0.0615797, 41.7343 )
+
+[node name="Dispenser4" parent="Extras" instance=ExtResource( 48 )]
+transform = Transform( 2.98023e-08, 0, -1, 0, 1, 0, 1, 0, 2.98023e-08, 186.788, 0.0615797, -137.266 )
+
+[node name="Dispenser5" parent="Extras" instance=ExtResource( 48 )]
+transform = Transform( -1.17225e-07, 0, 1, 0, 1, 0, -1, 0, -1.17225e-07, -182.735, 0.0615797, -137.266 )
+
+[node name="Dispenser6" parent="Extras" instance=ExtResource( 48 )]
+transform = Transform( -1.17225e-07, 0, 1, 0, 1, 0, -1, 0, -1.17225e-07, -94.3646, 0.0615797, 55.8081 )
+
 [node name="Salas_Lucio" type="Node" parent="."]
 
 [node name="SalaCopiado" parent="Salas_Lucio" instance=ExtResource( 29 )]
@@ -969,3 +1101,62 @@ transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -163.32
 
 [node name="SalaReuniones" parent="Salas_Lucio" instance=ExtResource( 20 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -140.226, 0, 108.712 )
+
+[node name="Sala_Reparacion" type="Node" parent="."]
+
+[node name="EscritorioC" parent="Sala_Reparacion" instance=ExtResource( 42 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 150.892, 0.0615797, 289.773 )
+
+[node name="AireAC" parent="Sala_Reparacion" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 133.267, 23.6143, 294.777 )
+
+[node name="BancoC" parent="Sala_Reparacion" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 161.603, 0.0615797, 279.364 )
+
+[node name="BancoC2" parent="Sala_Reparacion" instance=ExtResource( 44 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 140.956, 0.0615797, 279.364 )
+
+[node name="Cafetera" parent="Sala_Reparacion" instance=ExtResource( 49 )]
+transform = Transform( -5.96046e-08, -1, 0, -4.37114e-08, 1.91069e-15, 1, -1, 5.96046e-08, -4.37114e-08, 170.994, 11.4487, 291.45 )
+
+[node name="Dispenser" parent="Sala_Reparacion" instance=ExtResource( 48 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 166.56, 0.0615797, 206.441 )
+
+[node name="Monitor" parent="Sala_Reparacion" instance=ExtResource( 43 )]
+transform = Transform( 0.5, -0.866025, 3.78552e-08, 0, -4.37114e-08, -1, 0.866025, 0.5, -2.18557e-08, 146.593, 8.43793, 288.966 )
+
+[node name="RigidBody" parent="Sala_Reparacion" instance=ExtResource( 47 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 149.002, 7.02405, 293.114 )
+
+[node name="RigidBody2" parent="Sala_Reparacion" instance=ExtResource( 47 )]
+transform = Transform( -4.37114e-08, -1, 0, -5.96046e-08, 1.77636e-15, -1, 1, -4.37114e-08, -5.96046e-08, 138.258, 8.41714, 293.114 )
+
+[node name="Pizarron" parent="Sala_Reparacion" instance=ExtResource( 45 )]
+transform = Transform( 1.29904, 0, 0.5, 0, 1.5, 0, -0.75, 0, 0.866025, 120.922, -0.732821, 215.327 )
+
+[node name="Pizarron2" parent="Sala_Reparacion" instance=ExtResource( 45 )]
+transform = Transform( -1.19209e-07, 0, 1, 0, 1.5, 0, -1.5, 0, -5.96046e-08, 111.714, -0.732821, 231.405 )
+
+[node name="Pizarron3" parent="Sala_Reparacion" instance=ExtResource( 45 )]
+transform = Transform( -1.19209e-07, 0, 1, 0, 1.5, 0, -1.5, 0, -5.96046e-08, 111.714, -0.732821, 249.54 )
+
+[node name="Hojas" parent="Sala_Reparacion" instance=ExtResource( 46 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 141.735, 3.33716, 279.511 )
+
+[node name="Hojas2" parent="Sala_Reparacion" instance=ExtResource( 46 )]
+transform = Transform( 0.00916753, 0, 0.0995789, 0, 0.1, 0, -0.0995789, 0, 0.00916753, 140.283, 3.33716, 279.511 )
+
+[node name="Hojas3" parent="Sala_Reparacion" instance=ExtResource( 46 )]
+transform = Transform( 0.00916753, 0, 0.0995789, 0, 0.1, 0, -0.0995789, 0, 0.00916753, 141.207, 3.51689, 278.407 )
+
+[node name="Hojas4" parent="Sala_Reparacion" instance=ExtResource( 46 )]
+transform = Transform( 0.00916753, 0, 0.0995789, 0, 0.1, 0, -0.0995789, 0, 0.00916753, 153.456, 7.68174, 289.949 )
+
+[node name="Hojas5" parent="Sala_Reparacion" instance=ExtResource( 46 )]
+transform = Transform( 0.00916753, 0, 0.0995789, 0, 0.1, 0, -0.0995789, 0, 0.00916753, 155.187, 8.13118, 290.097 )
+
+[node name="Hojas6" parent="Sala_Reparacion" instance=ExtResource( 46 )]
+transform = Transform( -0.0757622, 0, 0.0652694, 0, 0.1, 0, -0.0652694, 0, -0.0757622, 154.022, 8.13118, 292.365 )
+
+[node name="dino" parent="." instance=ExtResource( 50 )]
+transform = Transform( -4.37114e-06, 0, 100, 0, 100, 0, -100, 0, -4.37114e-06, -167.052, 0, 252.92 )

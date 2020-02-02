@@ -6,6 +6,7 @@
 [sub_resource type="SpatialMaterial" id=1]
 
 [node name="Hojas" instance=ExtResource( 1 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.00582409, 0.0615797, 0.0894585 )
 mesh = ExtResource( 2 )
 material = SubResource( 1 )
 
