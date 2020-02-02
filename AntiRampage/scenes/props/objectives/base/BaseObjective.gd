@@ -1,7 +1,6 @@
 extends RigidBody
 export(String) var repaired_by
 export(int) var points_given = 100
-export(String) var game_manager_path = "../gameManager"
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -17,7 +16,8 @@ func _ready():
 #	pass
 func start_repair():
 	print("started repairing the item")
-	var manager = get_node(game_manager_path)
+	var manager = get_node("/root/gameManager")
+	print(points_given)
 	manager.add_points(points_given)
 	
 

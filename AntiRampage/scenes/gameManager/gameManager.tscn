@@ -13,5 +13,4 @@ mesh = ExtResource( 2 )
 material/0 = null
 
 [node name="GUI" parent="." instance=ExtResource( 3 )]
-
-[node name="Node" type="Node" parent="."]
+visible = false

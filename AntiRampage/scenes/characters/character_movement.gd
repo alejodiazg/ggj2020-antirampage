@@ -8,7 +8,7 @@ var is_grabbing = false
 var is_moveable = true
 var character
 var camera
-var rotating = true
+var rotating = false
 var prev_rot_z
 var prev_rot_x
 const SPEED = 40
@@ -28,7 +28,7 @@ func _physics_process(delta):
 
 func _input(event):
    # Mouse in viewport coordinates
-	if (rotating):
+	if (rotating && is_moveable):
 		if event is InputEventMouseMotion:
 			var mouse = event.position
 			rotate_axis(mouse)
@@ -76,7 +76,7 @@ func input_processing(delta):
 		speed.z = hv.z
 
 		speed = move_and_slide(speed, Vector3(0,1,0))
-		print(speed)
+
 		if is_moving:
 
 			get_node("Animadino/AnimationPlayer").play("default")
@@ -120,7 +120,7 @@ func rotate_axis(mouse):
 
 	if (abs(rotation_degrees.x) < 20 || abs(rotation_degrees.x) > 20 &&  abs(rotation_degrees.x + angley) < 20):
 		translation.y = 0
-		print(translation.y)
+
 		rotation_degrees.x += angley
 
 	if (abs(rotation_degrees.z) < 45 || abs(rotation_degrees.z) > 45 &&  abs(rotation_degrees.z + anglex) < 45):
