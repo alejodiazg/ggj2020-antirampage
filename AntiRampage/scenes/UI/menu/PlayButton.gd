@@ -11,8 +11,9 @@ func _ready():
 func _input(event):
 	if (!ready && Input.is_action_just_pressed("pick_up")):
 		var anim = animation_player.current_animation
-		var length = animation_player.get_animation(anim).length
-		animation_player.seek(length)
+		if (anim):
+			var length = animation_player.get_animation(anim).length
+			animation_player.seek(length)
 		ready = true
 
 func _on_PlayButton_pressed():

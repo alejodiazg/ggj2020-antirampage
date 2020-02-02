@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/UI/menu/PNG/background.png" type="Texture" id=1]
 [ext_resource path="res://scenes/UI/menu/PNG/FlyerGomezRex.png" type="Texture" id=2]
 [ext_resource path="res://scenes/UI/menu/PNG/buttonLarge.png" type="Texture" id=3]
 [ext_resource path="res://scenes/UI/menu/Font ui/GAME ROBOT-Light.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://scenes/UI/menu/PlayButton.gd" type="Script" id=5]
-[ext_resource path="res://assets/sounds/menusaurus.ogg" type="AudioStream" id=6]
 
 [sub_resource type="AnimatedTexture" id=1]
 fps = 11.3
@@ -131,8 +130,4 @@ texture = ExtResource( 2 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Logo"]
 autoplay = "Intro"
 anims/Intro = SubResource( 3 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 6 )
-autoplay = true
 [connection signal="pressed" from="Control/VBoxContainer/PlayButton" to="Control" method="_on_PlayButton_pressed"]

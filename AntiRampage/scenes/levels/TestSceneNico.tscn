@@ -229,54 +229,44 @@ shape = SubResource( 31 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
-autoplay = true
 
 [node name="Cafetera" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -108.217, 8.39178, -58.2668 )
 physics_material_override = null
-generate_collision = true
 
 [node name="Cafetera2" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -63.8796, 8.77527, -93.2142 )
 physics_material_override = null
-generate_collision = true
 
 [node name="EscritorioA" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -61.0193 )
 mass = 753.04
 physics_material_override = SubResource( 32 )
-generate_collision = true
 
 [node name="EscritorioA3" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -1.93555 )
 mass = 753.04
 physics_material_override = SubResource( 32 )
-generate_collision = true
 
 [node name="MaquinaExpendedora" parent="." instance=ExtResource( 13 )]
 transform = Transform( 0.999998, -0.00197222, 0, 0.00197222, 0.999998, 0, 0, 0, 1, 0, 0, -100.75 )
-generate_collision = true
 
 [node name="EscritorioA4" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -31.266 )
 mass = 753.04
 physics_material_override = SubResource( 32 )
-generate_collision = true
 
 [node name="EscritorioA5" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -111.521, 0, -90.9783 )
 mass = 753.04
 physics_material_override = SubResource( 32 )
-generate_collision = true
 
 [node name="Dispenser" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -140.815, 0, 0 )
 physics_material_override = SubResource( 33 )
-generate_collision = true
 
 [node name="EscritorioA2" parent="." instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -68.3554, 0, -92.2861 )
-generate_collision = true
 
 [node name="dino" parent="." instance=ExtResource( 2 )]
 
@@ -292,89 +282,65 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 101.544, 0, -92.1191 )
 
 [node name="EscritorioA6" parent="Oficina" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5931, 0.106201, -13.748 )
-generate_collision = true
 
 [node name="EscritorioA7" parent="Oficina" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5469, 0, 11.9189 )
-generate_collision = true
 
 [node name="EscritorioA8" parent="Oficina" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.546, -0.0852051, 39.7734 )
-generate_collision = true
 
 [node name="Pizarron" parent="Oficina" instance=ExtResource( 14 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.24542, 0, -13.4941 )
-generate_collision = true
 
 [node name="Carpeta" parent="Oficina" instance=ExtResource( 18 )]
 transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -13.7904, 7.79706, -12.0703 )
-generate_collision = true
 
 [node name="Cactus" parent="Oficina" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7874, 7.48938, -14.3268 )
-generate_collision = true
 
 [node name="Tacho" parent="Oficina" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1319, -0.0483398, -12.7782 )
-generate_collision = true
 
 [node name="SillaA" parent="Oficina" instance=ExtResource( 16 )]
 transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -23.5646, -0.000488281, -5.77881 )
-generate_collision = true
 
 [node name="Portaretrato" parent="Oficina" instance=ExtResource( 20 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4459, 7.98401, -14.8076 )
-generate_collision = true
 
 [node name="Carpeta2" parent="Oficina" instance=ExtResource( 18 )]
 transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -13.7904, 7.79706, 13.5278 )
-generate_collision = true
 
 [node name="Cactus2" parent="Oficina" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7874, 7.48938, 11.2714 )
-generate_collision = true
 
 [node name="Tacho2" parent="Oficina" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1319, -0.0483398, 12.8199 )
-generate_collision = true
 
 [node name="SillaA2" parent="Oficina" instance=ExtResource( 16 )]
 transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -23.5646, -0.000488281, 19.8193 )
-generate_collision = true
 
 [node name="Portaretrato2" parent="Oficina" instance=ExtResource( 20 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4459, 7.98401, 10.7905 )
-generate_collision = true
 
 [node name="Carpeta3" parent="Oficina" instance=ExtResource( 18 )]
 transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -13.7895, 7.71185, 41.3823 )
-generate_collision = true
 
 [node name="Cactus3" parent="Oficina" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7864, 7.40417, 39.1259 )
-generate_collision = true
 
 [node name="Tacho3" parent="Oficina" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.13095, -0.133545, 40.6744 )
-generate_collision = true
 
 [node name="SillaA3" parent="Oficina" instance=ExtResource( 16 )]
 transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -23.5636, -0.0856934, 47.6738 )
-generate_collision = true
 
 [node name="Portaretrato3" parent="Oficina" instance=ExtResource( 20 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4449, 7.8988, 38.645 )
-generate_collision = true
 
 [node name="PuertaA" parent="Oficina" instance=ExtResource( 21 )]
 transform = Transform( -0.00539317, 0, -0.999985, 0, 1, 0, 0.999985, 0, -0.00539317, -41.9231, 0.0615797, 57.8759 )
-generate_collision = true
 
 [node name="RigidBody" parent="." instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.56873, 35.8801 )
 physics_material_override = null
-mesh = null
-material = null
-generate_collision = true
 object_name = "SimplePlant"
-icon = null
