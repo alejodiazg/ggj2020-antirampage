@@ -12,3 +12,11 @@ mono_crash.*.json
 *~
 
 .DS_STORE
+AntiRampage/assets/characters/dino/dino.obj.import
+AntiRampage/assets/characters/dino/DINO[0]_p00.png.import
+AntiRampage/assets/characters/dino/DINO[1]_p00.png.import
+AntiRampage/assets/characters/dino/DINO[2]_p00.png.import
+AntiRampage/assets/characters/dino/DINO[3]_p00.png.import
+AntiRampage/assets/characters/dino/DINO[4]_p00.png.import
+AntiRampage/assets/characters/dino/DINO[5]_p00.png.import
+AntiRampage/assets/Textures/AtlasColor.jpg.import
