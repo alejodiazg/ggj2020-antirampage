@@ -1,7 +1,7 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/props/interactives/base/BaseInteractiveObjectl.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/characters/grab_ray/GrabRay.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/props/interactives/Plant.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/characters/Dino.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/props/objectives/base/BaseObjective.tscn" type="PackedScene" id=4]
 
@@ -12,14 +12,6 @@ albedo_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="ConvexPolygonShape" id=3]
 points = PoolVector3Array( -1.00542, 0.00546448, -1.00546, -1.00542, 0.00546448, 1.00546, 1.00546, 0.00546448, -1.00546, 1.00546, 0.00546448, 1.00546 )
-
-[sub_resource type="PhysicsMaterial" id=4]
-bounce = 0.1
-
-[sub_resource type="CubeMesh" id=5]
-
-[sub_resource type="SpatialMaterial" id=6]
-albedo_color = Color( 1, 0, 0, 1 )
 
 [sub_resource type="PhysicsMaterial" id=7]
 bounce = 1.0
@@ -44,33 +36,8 @@ material/0 = SubResource( 2 )
 transform = Transform( 200, 0, 0, 0, 200, 0, 0, 0, 200, 0.058568, 9.53674e-07, -0.342547 )
 shape = SubResource( 3 )
 
-[node name="TestInteractive" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18.1487, 0 )
-collision_layer = 3
-collision_mask = 3
-physics_material_override = SubResource( 4 )
-mesh = SubResource( 5 )
-material = SubResource( 6 )
-object_name = "TestObject"
-
-[node name="Spatial" parent="." instance=ExtResource( 3 )]
-transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, -10.6488 )
-
-[node name="KinematicBody" parent="Spatial" index="0"]
-collision_mask = 0
-
-[node name="dino" parent="Spatial/KinematicBody" index="2"]
-transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
-
-[node name="RayCast" parent="Spatial/KinematicBody" index="3" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.28936, 17.408 )
-cast_to = Vector3( 0, 0, 10 )
-
-[node name="CSGMesh" parent="Spatial/KinematicBody" index="4"]
-transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
-
 [node name="Objective1" parent="." instance=ExtResource( 4 )]
-transform = Transform( -0.0471065, 0, 0.99889, 0, 1, 0, -0.99889, 0, -0.0471065, 0, 1.27267, 7.94409 )
+transform = Transform( -0.0471065, 0, 0.99889, 0, 1, 0, -0.99889, 0, -0.0471065, -0.0172615, 1.27267, 8.04979 )
 repaired_by = "TestObject"
 
 [node name="Objective2Azul" parent="." instance=ExtResource( 4 )]
@@ -84,4 +51,8 @@ mesh = SubResource( 8 )
 material = SubResource( 9 )
 object_name = "Azul"
 
-[editable path="Spatial"]
+[node name="dino" parent="." instance=ExtResource( 3 )]
+transform = Transform( 100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, -26.928 )
+
+[node name="Plant" parent="." instance=ExtResource( 2 )]
+mass = 10.0
