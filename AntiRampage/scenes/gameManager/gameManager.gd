@@ -1,15 +1,15 @@
 extends Node
 
 var time_left = 60
-var points = 5000
+var points = 0
 var timer
 onready var number_label 
 onready var points_label 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("hole")
-	number_label = get_node("../GUI/TimerLabel")
-	points_label = get_node("../GUI/PointsLabel")
+	number_label = get_node("GUI/TimerLabel")
+	points_label = get_node("GUI/PointsLabel")
 	timer = Timer.new()
 	timer.set_wait_time(time_left)
 	timer.connect("timeout",self,"_on_timer_timeout") 
@@ -28,7 +28,10 @@ func _process(delta):
 	number_label.set_text(str(int(timer.time_left)))
 	points_label.set_text(str(int(points)))
 	pass
-	
+
+func add_points(new_points):
+	points += new_points
+
 func _on_timer_timeout():
 	print("se termino el tiempo BRO")
    #your_timer_stuff()
