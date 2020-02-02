@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/UI/menu/PNG/clock.png" type="Texture" id=1]
 [ext_resource path="res://scenes/UI/menu/Font ui/GAME ROBOT-Light.otf" type="DynamicFontData" id=2]
 [ext_resource path="res://scenes/UI/menu/PNG/cash.png" type="Texture" id=3]
-[ext_resource path="res://scenes/UI/menu/PNG/circleButton.png" type="Texture" id=4]
+[ext_resource path="res://scenes/UI/menu/PNG/circlearea.png" type="Texture" id=4]
+[ext_resource path="res://scenes/UI/menu/PNG/bidon.png" type="Texture" id=5]
 [ext_resource path="res://scenes/UI/menu/PNG/sound-active.png" type="Texture" id=8]
 [ext_resource path="res://scenes/UI/menu/PNG/sound-disabled.png" type="Texture" id=9]
 
@@ -102,6 +103,24 @@ rect_min_size = Vector2( 1, 1 )
 rect_rotation = 1.0
 texture = ExtResource( 4 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tofix_texture" type="TextureRect" parent="."]
+anchor_left = -0.00264001
+anchor_top = 0.794747
+anchor_right = 0.11736
+anchor_bottom = 0.997747
+margin_left = -0.296631
+margin_top = 0.151611
+margin_right = 4.82336
+margin_bottom = 6.35168
+size_flags_horizontal = 15
+size_flags_vertical = 15
+texture = ExtResource( 5 )
+expand = true
+stretch_mode = 6
 __meta__ = {
 "_edit_use_anchors_": false
 }

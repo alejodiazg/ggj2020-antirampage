@@ -8,6 +8,13 @@ var playButton
 var MainMenu
 var Logo
 var GUI
+var fixers
+var tofix
+var actual_fixer
+var actual_tofix
+var fixer1
+var actual_fixer_logo 
+var actual_fixer_texture_gui
 onready var number_label 
 onready var points_label 
 # Called when the node enters the scene tree for the first time.
@@ -20,8 +27,12 @@ func _ready():
 	Logo = root.get_node("MainMenu/Logo")
 	playButton = root.get_node("MainMenu/Control/VBoxContainer/PlayButton")
 	character = root.get_node("level/dino")
+	fixer1 = root.get_node("level/Fixer1")
+	actual_fixer_texture_gui = GUI.get_node("tofix_texture")
+	fixers = [fixer1]
 	
-	
+	updateFixer(0)
+
 	timer = Timer.new()
 	timer.set_wait_time(time_left)
 	timer.connect("timeout",self,"_on_timer_timeout") 
@@ -57,3 +68,8 @@ func game_start():
 	Logo.hide()
 	timer.start()
 	
+func updateFixer(i):
+	actual_fixer = fixers[i]
+	actual_fixer_logo = actual_fixer.icon
+	actual_fixer_texture_gui.set_texture(actual_fixer_logo)
+	actual_fixer_texture_gui.set_size(Vector2(1,1))
