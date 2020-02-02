@@ -118,6 +118,9 @@ margin_right = 61.0
 margin_bottom = 21.5
 custom_fonts/font = SubResource( 2 )
 text = "Jugar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Logo" type="Node2D" parent="."]
 
@@ -128,4 +131,3 @@ texture = ExtResource( 2 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Logo"]
 autoplay = "Intro"
 anims/Intro = SubResource( 3 )
-[connection signal="pressed" from="Control/VBoxContainer/PlayButton" to="Control" method="_on_PlayButton_pressed"]

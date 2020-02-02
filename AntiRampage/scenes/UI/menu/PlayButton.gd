@@ -15,7 +15,3 @@ func _input(event):
 			var length = animation_player.get_animation(anim).length
 			animation_player.seek(length)
 		ready = true
-
-func _on_PlayButton_pressed():
-	print("pres")
-	pass

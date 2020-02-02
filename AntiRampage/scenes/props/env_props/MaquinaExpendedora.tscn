@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/props/base/BaseProp.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/MaterialMadre.material" type="Material" id=2]
+[ext_resource path="res://assets/MaterialPadre.material" type="Material" id=2]
 [ext_resource path="res://assets/Props_Finales/SM_Maquina_Espendedora.obj" type="ArrayMesh" id=3]
 
 [node name="MaquinaExpendedora" instance=ExtResource( 1 )]

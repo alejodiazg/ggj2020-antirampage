@@ -36,7 +36,7 @@ func _input(event):
 
 
 func input_processing(delta):
-	camera = get_node("target/Camera").get_global_transform()
+	camera = get_node("Camera").get_global_transform()
 	var dir = Vector3()
 	var is_moving = false
 
