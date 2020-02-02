@@ -2,16 +2,16 @@
 
 [ext_resource path="res://scenes/props/interactives/base/BaseInteractiveObjectl.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/Props_Finales/SM_PlantaA.obj" type="ArrayMesh" id=2]
-
-[sub_resource type="SpatialMaterial" id=1]
-albedo_color = Color( 0.0627451, 0.862745, 0.0196078, 1 )
+[ext_resource path="res://assets/Props_Finales/SM_Impresora.obj" type="ArrayMesh" id=3]
 
 [node name="BaseProp" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+mass = 1.0
+physics_material_override = null
+linear_damp = 100.0
+angular_damp = 100.0
 mesh = ExtResource( 2 )
-material = SubResource( 1 )
 object_name = "SimplePlant"
 
 [node name="MeshInstance" parent="." index="0"]
-material_override = SubResource( 1 )
-mesh = ExtResource( 2 )
+mesh = ExtResource( 3 )

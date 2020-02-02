@@ -12,7 +12,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _input(event):
-	if event is InputEventKey and event.scancode == KEY_E and not event.echo:
+	if event is InputEventMouseButton and event.button_index == BUTTON_LEFT and event.pressed:
 		if self.enabled:
 			if is_colliding():
 				var body = get_collider()

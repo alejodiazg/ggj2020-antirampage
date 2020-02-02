@@ -124,7 +124,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0352387 )
 shape = SubResource( 13 )
 
 [node name="GrabRay" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0372629, 0.0620017 )
-cast_to = Vector3( 0, 0, 10 )
+transform = Transform( 1, 0, 0, 0, 0.939693, -0.34202, 0, 0.34202, 0.939693, 0, 0.0372629, 0.0620017 )
+cast_to = Vector3( 0, 0, 0.1 )
 
 [editable path="Animadino"]
